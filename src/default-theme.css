@@ -1,0 +1,24 @@
+* {
+    --plain-text-color: #141d26;
+    --button-background-color: white;
+    --button-background-color-on-hover: #F0F0F0;
+    --buttom-box-shadow-size: 4px;
+}
+
+*:active {
+    --button-background-color: white;
+    --button-background-color-on-hover: #F0F0F0;
+    --buttom-box-shadow-size: 1px;
+}
+
+.primary {
+    --plain-text-color: #fff;
+    --button-background-color: #0084B4;
+    --button-background-color-on-hover: #01A6E2;
+}
+
+.success {
+    --plain-text-color: #fff;
+    --button-background-color: #3FA13F;
+    --button-background-color-on-hover: #3FA13F
+}

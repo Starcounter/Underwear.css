@@ -5,14 +5,14 @@ const OptimizeCssAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 const plugins = [
   new ExtractTextPlugin("dist/underwear.css"),
   new WebpackShellPlugin({
-    onBuildEnd: ["rm bundle.js || del bundle.js"]
+    onBuildEnd: ["rm ./dist/bundle.js || del ./dist/bundle.js"]
   })
 ];
 
 const pluginsWithMinification = [
   new ExtractTextPlugin("dist/underwear.min.css"),
   new WebpackShellPlugin({
-    onBuildEnd: ["rm bundle.js || del bundle.js"]
+    onBuildEnd: ["rm ./dist/bundle.js || del ./dist/bundle.js"]
   }),
   new OptimizeCssAssetsPlugin({
     assetNameRegExp: /\.css$/g,
@@ -25,7 +25,7 @@ const pluginsWithMinification = [
 const config = {
   entry: "./index.js",
   output: {
-    filename: "bundle.js"
+    filename: "./dist/bundle.js"
   },
   module: {
     loaders: [
@@ -33,7 +33,7 @@ const config = {
         test: /\.(ttf|eot|woff|woff2)$/,
         loader: "file-loader",
         options: {
-          name: "./dist/fonts/[name].[ext]"
+          name: "./fonts/[name].[ext]"
         }
       },
       {

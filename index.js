@@ -1,3 +1,5 @@
-const font = require('./src/font-import.css');
-const normalize = require('normalize.css');
-const css = require('milligram');
+require("./src/font-import.css");
+require("normalize.css");
+require("milligram");
+require("./src/override-milligram-colors.css");
+require("./src/default-theme.css");
