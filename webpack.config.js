@@ -1,19 +1,12 @@
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
-const WebpackShellPlugin = require("webpack-shell-plugin");
 const OptimizeCssAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 
 const plugins = [
-  new ExtractTextPlugin("dist/underwear.css"),
-  new WebpackShellPlugin({
-    onBuildEnd: ["rm ./dist/bundle.js || del ./dist/bundle.js || true"]
-  })
+  new ExtractTextPlugin("dist/underwear.css")
 ];
 
 const pluginsWithMinification = [
-  new ExtractTextPlugin("dist/underwear.min.css"),
-  new WebpackShellPlugin({
-    onBuildEnd: ["rm ./dist/bundle.js || del ./dist/bundle.js || true"]
-  }),
+  ...plugins,
   new OptimizeCssAssetsPlugin({
     assetNameRegExp: /\.css$/g,
     cssProcessor: require("cssnano"),
