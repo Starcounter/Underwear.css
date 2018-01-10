@@ -5,14 +5,14 @@ const OptimizeCssAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 const plugins = [
   new ExtractTextPlugin("dist/underwear.css"),
   new WebpackShellPlugin({
-    onBuildEnd: ["rm ./dist/bundle.js || del ./dist/bundle.js"]
+    onBuildEnd: ["rm ./dist/bundle.js || del ./dist/bundle.js || true"]
   })
 ];
 
 const pluginsWithMinification = [
   new ExtractTextPlugin("dist/underwear.min.css"),
   new WebpackShellPlugin({
-    onBuildEnd: ["rm ./dist/bundle.js || del ./dist/bundle.js"]
+    onBuildEnd: ["rm ./dist/bundle.js || del ./dist/bundle.js || true"]
   }),
   new OptimizeCssAssetsPlugin({
     assetNameRegExp: /\.css$/g,

@@ -4,7 +4,8 @@
 <head>
     <meta charset="utf-8">
     <title>title</title>
-    <link rel="stylesheet" href="dist/underwear.min.css">
+    <link rel="stylesheet" href="dist/underwear.css">
+
 </head>
 
 <body>
@@ -18,25 +19,39 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            flex-direction: column
+        }
+
+        body>div {
+            margin-bottom: 150px
+        }
+
+        span[sider] {
+            display: inline-block;
+            padding: 30px;
+            border: 1px solid #eee;
+            height: 400px;
+            width: 300px;
+            vertical-align: top;
         }
     </style>
     <div>
+        <h1>Button</h1>
         <table>
             <tr>
                 <td>
-                    <button>Default</button>
+                    <p>Default</p>
                 </td>
+                <td>
+                    <p>Disabled</p>
+                </td>
+            </tr>
+            <tr>
                 <td>
                     <button>Default</button>
                 </td>
                 <td>
-                    <button>Default</button>
-                </td>
-                <td>
-                    <button>Default</button>
-                </td>
-                <td>
-                    <button>Default</button>
+                    <button disabled>Default</button>
                 </td>
             </tr>
             <tr>
@@ -44,38 +59,185 @@
                     <button class="primary">Primary</button>
                 </td>
                 <td>
-                    <button class="primary">Primary</button>
-                </td>
-                <td>
-                    <button class="primary">Primary</button>
-                </td>
-                <td>
-                    <button class="primary">Primary</button>
-                </td>
-                <td>
-                    <button class="primary">Primary</button>
+                    <button class="primary" disabled>Primary</button>
                 </td>
             </tr>
             <tr>
-                    <td>
-                        <button class="success">Success</button>
-                    </td>
-                    <td>
-                        <button class="success">Success</button>
-                    </td>
-                    <td>
-                        <button class="success">Success</button>
-                    </td>
-                    <td>
-                        <button class="success">Success</button>
-                    </td>
-                    <td>
-                        <button class="success">Success</button>
-                    </td>
-                </tr>
+                <td>
+                    <button class="success">Success</button>
+                </td>
+                <td>
+                    <button class="success" disabled>Success</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button class="danger">Danger</button>
+                </td>
+                <td>
+                    <button class="danger" disabled>Danger</button>
+                </td>
+            </tr>
         </table>
     </div>
-    <!-- page content -->
+    <div>
+        <h1>Dropdown</h1>
+        <table>
+            <tr>
+                <td>
+                    <p>Default</p>
+                </td>
+                <td>
+                    <p>Disabled</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <select>
+                        <option>Select me</option>
+                        <option>Or me</option>
+                    </select>
+                </td>
+                <td>
+                    <select disabled>
+                        <option>Select me</option>
+                        <option>Or me</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <h1>Entry field</h1>
+        <div>
+            <form>
+                <input type="text" value="Default">
+                <input type="text" disabled value="Default">
+                <input type="text" value="Default" placeholder="&lt;place holder&gt;">
+            </form>
+        </div>
+    </div>
+    <div style="width: 700px">
+        <h1>Table</h1>
+        <table>
+            <tr>
+                <th>Entry Header 1</th>
+                <th>Entry Header 2</th>
+                <th>Entry Header 3</th>
+                <th>Entry Header 4</th>
+            </tr>
+            <tr>
+                <td>Entry First Line 1</td>
+                <td>Entry First Line 2</td>
+                <td>Entry First Line 3</td>
+                <td>Entry First Line 4</td>
+            </tr>
+            <tr>
+                <td>Entry Line 1</td>
+                <td>Entry Line 2</td>
+                <td>Entry Line 3</td>
+                <td>Entry Line 4</td>
+            </tr>
+            <tr>
+                <td>Entry Last Line 1</td>
+                <td>Entry Last Line 2</td>
+                <td>Entry Last Line 3</td>
+                <td>Entry Last Line 4</td>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <span sider>
+            <h1>Checkbox</h1>
+            <div>
+                <form>
+                    <input id="checkbox" type="checkbox" value="Checkbox"> Checkbox
+                </form>
+                <form>
+                    <input id="checkbox2" disabled type="checkbox" value="Checkbox">
+                    <label for="checkbox2">Disabled unchecked</label>
+                </form>
+                <form>
+                    <input id="checkbox3" disabled checked type="checkbox" value="Checkbox">
+                    <label for="checkbox3">Disabled checked</label>
+                </form>
+            </div>
+        </span sider>
+        <span>
+            <h1>Link</h1>
+            <div>
+                <a href="#">Link</a>
+            </div>
+        </span>
+    </div>
+    <div>
+        <div class="uniform-pagination">
+            <span class="previous">Prev</span>
+            <span>1</span>
+            <span class="active">2</span>
+            <span disabled>3</span>
+            <span>4</span>
+            <span>5</span>
+            <span class="next">Next</span>
+        </div>
+    </div>
+    <div>
+        <h1>
+            Composition Example
+        </h1>
+        <div class="uniform-form">
+            <div style="width: 500px">
+                <label style="width: 100%">
+                    <span>Email</span>
+                    <input style="width: 100%" type="text" value="stephen@fry.com">
+                </label>
+            </div>
+            <div>
+                <label>
+                    <span>First name</span>
+                    <br />
+                    <input type="text" value="Stephen">
+                </label>
+
+                <label>
+                    <span>Last name</span>
+                    <br />
+                    <input type="text" value="Fry">
+                </label>
+            </div>
+            <div>
+                <label>
+                    <span>Mobile phone number</span>
+                    <br />
+                    <input type="text" value="+46 707 11 33 44">
+                </label>
+            </div>
+            <div>
+                <label>
+                    <span>Home number</span>
+                    <br />
+                    <input type="text" value="+46 707 11 33 44">
+                </label>
+                <p>
+                    <a href="#">ADD PHONE NUMBER</a>
+                </p>
+            </div>
+            <div>
+                <label>
+                    <span>Home address</span>
+                    <br />
+                    <input type="text" value="Bybrokajen 5, 111 48 Stockholm">
+                </label>
+                <p>
+                    <a href="#">ADD ADDRESS</a>
+                </p>
+            </div>
+            <div>
+                <button class="primary">Submit</button>
+                <button>Cancel</button>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
