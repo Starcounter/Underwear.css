@@ -9,4 +9,4 @@
 
 ## Modifying CSS
 
-Please make sure to modify only files in `src` directory`. 
+Please make sure to modify only files in `src` directory. 
