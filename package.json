@@ -19,7 +19,7 @@
     "sakura.css": "^1.0.0"
   },
   "scripts": {
-    "start": "webpack-dev-server --content-base . --hot --inline",
+    "start": "webpack-dev-server --content-base . --hot --inline --open",
     "build": "webpack -p"
   },
   "repository": {
