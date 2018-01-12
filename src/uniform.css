@@ -154,7 +154,6 @@
   transform: translate(-3px, 0);
 }
 
-
 .uniform-pagination > span:hover:not(.active):not(.previous):not(.next):not(:disabled):not([disabled]) /* , .uniform-pagination > ::slotted(span:hover:not(.active)) */ {
   border: 1px solid rgb(105, 206, 243);
 }
