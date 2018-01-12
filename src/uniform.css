@@ -96,24 +96,28 @@
 .uniform-pagination {
   border: 1px solid #ddd;
   border-radius: 5px;
+  height: 36px;
+  padding: 1px;
 }
 
-.uniform-pagination > * /* , .uniform-pagination > ::slotted(*) */ {
+.uniform-pagination > span, a, button /* , .uniform-pagination > ::slotted(*) */ {
   all: initial;
   font-family: inherit;
   font-size: 1em;
-  padding: 0 0.5em;
-  margin: 0.35em 1em;
-  vertical-align: middle;
-  border: 2px solid #fff;
+  padding: 0 5px;
+  margin: 5px 2px;
+  border: 1px solid #fff;
   color: #0084b4;
   cursor: pointer;
   display: inline-block;
+
 }
 
+
 .uniform-pagination > .active /* , .uniform-pagination > ::slotted(.active) */ {
-  border: 2px solid #0084b4;
+  border: 1px solid #0084b4;
 }
+
 .uniform-pagination > :disabled, [disabled] /* , .uniform-pagination > ::slotted(:disabled , [disabled) */ {
     background: #eee;
     color: #aaa;
@@ -127,6 +131,9 @@
   -webkit-transition: transform 0.2s ease-in-out;
   -moz-transition: transform 0.2s ease-in-out;
   transition: transform 0.2s ease-in-out;
+  margin: 0px;
+  margin-right: 8px;
+  margin-left: 6px
 }
 
 .uniform-pagination > .next /* , .uniform-pagination > ::slotted(.next) */ {
@@ -136,6 +143,8 @@
   -webkit-transition: transform 0.2s ease-in-out;
   -moz-transition: transform 0.2s ease-in-out;
   transition: transform 0.2s ease-in-out;
+  margin-left: 8px;
+  margin-right: 6px
 }
 
 .uniform-pagination > .next:hover /* , .uniform-pagination > ::slotted(.next:hover) */ {
@@ -145,17 +154,9 @@
   transform: translate(-3px, 0);
 }
 
-.uniform-pagination > span.active /* , .uniform-pagination > ::slotted(span.active) */ {
-  border: 2px solid #0084b4;
-}
-
-.uniform-pagination > span.disabled /* , .uniform-pagination > ::slotted(span.disabled) */ {
-  color: var(--livid, #8696a5);
-  cursor: default;
-}
 
 .uniform-pagination > span:hover:not(.active):not(.previous):not(.next):not(:disabled):not([disabled]) /* , .uniform-pagination > ::slotted(span:hover:not(.active)) */ {
-  border: 2px solid rgb(105, 206, 243);
+  border: 1px solid rgb(105, 206, 243);
 }
 
 .uniform-form > div {
