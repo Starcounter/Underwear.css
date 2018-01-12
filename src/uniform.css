@@ -100,7 +100,10 @@
   padding: 1px;
 }
 
-.uniform-pagination > span, a, button /* , .uniform-pagination > ::slotted(*) */ {
+.uniform-pagination > span,
+.uniform-pagination > a,
+.uniform-pagination > button
+/*.uniform-pagination > ::slotted(*) */ {
   all: initial;
   font-family: inherit;
   font-size: 1em;
