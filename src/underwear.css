@@ -376,10 +376,14 @@ table {
   width: 100%;
 }
 
+tr {
+  height: 40px;
+}
+
 td,
 th {
-  padding: 9px 20px;
   text-align: left;
+  padding: 0px 20px;
 }
 
 tbody > tr:first-child > td:first-child {
