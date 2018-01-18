@@ -74,8 +74,8 @@
 
 .uniform-button-primary button /* , .uniform-button-primary::slotted(button) */ {
   color: #fff !important;
-  background-color: var(--primary, #0084b4) !important;
-  border: 0.1rem solid var(--primary, #0084b4) !important;
+  background-color: #0084B4;
+  border: 0.1rem solid #0084B4;
   border-radius: 3px !important;
   height: inherit !important;
 }
