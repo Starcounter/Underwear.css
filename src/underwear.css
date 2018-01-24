@@ -24,21 +24,21 @@
   --bluish-gray: #606c76;
   
   --default-font-size: 14px;
-  --default-body-color: var(--dark, #141d26);
-  --block-quote-border-color: var(--livid, #8696a5);
-  --button-shadow-color:  var(--transparent-black, #00000033);
-  --select-bgcolor:  var(--light, #F6F6F6);
-  --button-bgcolor:  var(--while, #FFFFFF);
-  --disabled-element-bgcolor:  var(--light, #F6F6F6);
-  --button-hover-bgcolor:  var(--mouse, #e7ecf0);
-  --button-text-color:  var(--dark, #141d26);  
-  --disabled-element-text-color: var(--darkgray, #868e96);
-  --table-border-color: var(--light-gray, #E1E1E1);
-  --code-block-bg-color: var(--light, #F6F6F6);
-  --code-block-color: var(--red, #df4534);
-  --code-block-border-color: var(--blue, #0084b4);
-  --anchor-color: var(--blue, #0084b4);
-  --table-border-color: var(--light-gray, #E1E1E1);
+  --default-body-color: var(--dark);
+  --blockquote-border-color: var(--livid);
+  --button-shadow-color:  var(--transparent-black);
+  --select-background-color:  var(--light);
+  --button-background-color:  var(--while);
+  --disabled-background-color:  var(--light);
+  --button-hover-background-color:  var(--mouse);
+  --button-text-color:  var(--dark);  
+  --disabled-element-text-color: var(--darkgray);
+  --table-border-color: var(--light-gray);
+  --code-block-bg-color: var(--light);
+  --code-block-color: var(--red);
+  --code-block-border-color: var(--blue);
+  --anchor-color: var(--blue);
+  --table-border-color: var(--light-gray);
   
   --font-family-sans-serif: "Roboto", "Segoe UI", "Helvetica Neue", Arial, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -76,7 +76,7 @@ body {
 }
 
 blockquote {
-  border-left: 0.3rem solid var(--block-quote-border-color);
+  border-left: 0.3rem solid var(--blockquote-border-color);
   margin-left: 0;
   margin-right: 0;
   padding: 1rem 1.5rem;
@@ -90,7 +90,7 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-    background-color: var(--button-bgcolor, #FFFFFF);
+    background-color: var(--button-background-color, #FFFFFF);
     border: none;  
     color: var(--button-text-color, #141d26);
     border-radius: 2px;
@@ -102,8 +102,8 @@ input[type="submit"] {
     white-space: nowrap;
     min-width: 120px;
     box-shadow: 0px 1px 3px 0 var(--button-shadow-color, #00000033);
+    margin: 2px 2px 2px 0;
   }
-
 
 button:active,
 input[type="button"]:active,
@@ -116,7 +116,7 @@ button:hover,
 input[type="button"]:hover,
 input[type="reset"]:hover,
 input[type="submit"]:hover {
-  background-color: var(--button-hover-bgcolor, #e7ecf0);
+  background-color: var(--button-hover-background-color, #e7ecf0);
   outline: 0;
 }
 
@@ -133,12 +133,12 @@ input[type="reset"][disabled],
 input[type="submit"][disabled] {
   cursor: default;
   box-shadow: none;
-  background-color: var(--disabled-element-bgcolor, #F6F6F6);
+  background-color: var(--disabled-background-color, #F6F6F6);
   color: var(--disabled-element-text-color,  #868e96);
 }
 
 input[type="text"]:disabled {
-  background-color: var(--disabled-element-bgcolor, #F6F6F6);
+  background-color: var(--disabled-background-color, #F6F6F6);
   color: var(--disabled-element-text-color,  #868e96)
 }
 
@@ -168,6 +168,7 @@ pre {
   background: #f4f5f6;
   border-left: 0.3rem solid var(--code-block-border-color, #0084b4);
   overflow-y: hidden;
+  padding-left: 0.5em;  
 }
 
 pre > code {
@@ -191,11 +192,11 @@ input[type="tel"],
 input[type="text"],
 input[type="url"],
 textarea,
-select {
+select:not([multiple]) {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  background-color: var(--select-bgcolor, #F6F6F6);
+  background-color: var(--select-background-color, #F6F6F6);
   border: none;
   box-shadow: none;
   box-sizing: border-box;
@@ -216,11 +217,13 @@ select:focus {
   outline: 0;
 }
 
-select {
+select:not([multiple]) {
   background: url('data:image/svg+xml;utf8, <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="20" height="20" x="120px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve"><g><polygon points="79.3,42.1 76.4,39.3 51.3,65 25.5,39.9 22.7,42.7 51.3,70.7  "></polygon></g></svg>')
     center right no-repeat;
   padding-right: 3rem;
   background-position: 94% 50%;
+  box-shadow: 1px 1px 2px 1px rgba(0,0,0,0.31);
+  border-radius: 4px;
 }
 
 textarea {
@@ -314,26 +317,9 @@ ul {
   list-style: circle inside;
 }
 
-select {
-    box-shadow: 1px 1px 2px 1px rgba(0,0,0,0.31);
-    border-radius: 4px;
-}
-
 select:disabled {
     box-shadow: none;
-    background: var(--disabled-element-bgcolor, #F6F6F6);
-}
-
-blockquote,
-dl,
-figure,
-form,
-ol,
-p,
-pre,
-table,
-ul {
-  margin-bottom: 2.5rem;
+    background: var(--disabled-background-color, #F6F6F6);
 }
 
 table {
@@ -387,10 +373,6 @@ strong {
   font-weight: bold;
 }
 
-p {
-  margin: 0;
-}
-
 h1,
 h2,
 h3,
@@ -399,8 +381,7 @@ h5,
 h6 {
   font-weight: 300;
   letter-spacing: -0.1rem;
-  margin-bottom: 2rem;
-  margin-top: 0;
+  margin: 2rem 0;
 }
 
 h1 {
@@ -438,11 +419,4 @@ h6 {
 
 img {
   max-width: 100%;
-}
-
-
-/* Starcounter */
-
-body > starcounter-include {
-  height: 100%;
 }
