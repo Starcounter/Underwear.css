@@ -3,7 +3,7 @@
  * (c) Starcounter
  */
 
- :root {
+:root {
   /* Starcounter default color variables */
   --dark: #141d26;
   --inky: #1b2936;
@@ -13,25 +13,25 @@
   --blue-dark: #1a587f;
   --blue: #0084b4;
   --platinum: #e7e7e7;
-  --white: #FFFFFF;
-  --white-smoke: #F9F9F9;
-  --light: #F6F6F6;
+  --white: #ffffff;
+  --white-smoke: #f9f9f9;
+  --light: #f6f6f6;
   --yellow: #ffdb25;
   --red: #df4534;
   --green: #3fa13f;
   --darkgray: #868e96;
-  --light-gray: #E1E1E1;
+  --light-gray: #e1e1e1;
   --bluish-gray: #606c76;
-  
+
   --default-font-size: 14px;
   --default-body-color: var(--dark);
   --blockquote-border-color: var(--livid);
-  --button-shadow-color:  var(--transparent-black);
-  --select-background-color:  var(--light);
-  --button-background-color:  var(--while);
-  --disabled-background-color:  var(--light);
-  --button-hover-background-color:  var(--mouse);
-  --button-text-color:  var(--dark);  
+  --button-shadow-color: var(--transparent-black);
+  --select-background-color: var(--light);
+  --button-background-color: var(--while);
+  --disabled-background-color: var(--light);
+  --button-hover-background-color: var(--mouse);
+  --button-text-color: var(--dark);
   --disabled-element-text-color: var(--darkgray);
   --table-border-color: var(--light-gray);
   --code-block-bg-color: var(--light);
@@ -39,11 +39,11 @@
   --code-block-border-color: var(--blue);
   --anchor-color: var(--blue);
   --table-border-color: var(--light-gray);
-  
-  --font-family-sans-serif: "Roboto", "Segoe UI", "Helvetica Neue", Arial, sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+  --font-family-sans-serif: 'Roboto', 'Segoe UI', 'Helvetica Neue', Arial,
+    sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
-    "Liberation Mono", "Courier New", monospace;
+    'Liberation Mono', 'Courier New', monospace;
 }
 
 /**
@@ -87,75 +87,75 @@ blockquote *:last-child {
 }
 
 button,
-input[type="button"],
-input[type="reset"],
-input[type="submit"] {
-    background-color: var(--button-background-color, #FFFFFF);
-    border: none;  
-    color: var(--button-text-color, #141d26);
-    border-radius: 2px;
-    padding-left: 16px;
-    padding-right: 16px;
-    height: 32px;
-    cursor: pointer;
-    box-sizing: border-box;
-    white-space: nowrap;
-    min-width: 120px;
-    box-shadow: 0px 1px 3px 0 var(--button-shadow-color, #00000033);
-    margin: 2px 2px 2px 0;
-  }
+input[type='button'],
+input[type='reset'],
+input[type='submit'] {
+  background-color: var(--button-background-color, #ffffff);
+  border: none;
+  color: var(--button-text-color, #141d26);
+  border-radius: 2px;
+  padding-left: 16px;
+  padding-right: 16px;
+  height: 32px;
+  cursor: pointer;
+  box-sizing: border-box;
+  white-space: nowrap;
+  min-width: 120px;
+  box-shadow: 0px 1px 3px 0 var(--button-shadow-color, #00000033);
+  margin: 2px 2px 2px 0;
+}
 
 button:active,
-input[type="button"]:active,
-input[type="reset"]:active,
-input[type="submit"]:active {
+input[type='button']:active,
+input[type='reset']:active,
+input[type='submit']:active {
   box-shadow: none;
 }
 
 button:hover,
-input[type="button"]:hover,
-input[type="reset"]:hover,
-input[type="submit"]:hover {
+input[type='button']:hover,
+input[type='reset']:hover,
+input[type='submit']:hover {
   background-color: var(--button-hover-background-color, #e7ecf0);
   outline: 0;
 }
 
 button:focus,
-input[type="button"]:focus,
-input[type="reset"]:focus,
-input[type="submit"]:focus {
+input[type='button']:focus,
+input[type='reset']:focus,
+input[type='submit']:focus {
   outline: 0;
 }
 
 button[disabled],
-input[type="button"][disabled],
-input[type="reset"][disabled],
-input[type="submit"][disabled] {
+input[type='button'][disabled],
+input[type='reset'][disabled],
+input[type='submit'][disabled] {
   cursor: default;
   box-shadow: none;
-  background-color: var(--disabled-background-color, #F6F6F6);
-  color: var(--disabled-element-text-color,  #868e96);
+  background-color: var(--disabled-background-color, #f6f6f6);
+  color: var(--disabled-element-text-color, #868e96);
 }
 
-input[type="text"]:disabled {
-  background-color: var(--disabled-background-color, #F6F6F6);
-  color: var(--disabled-element-text-color,  #868e96)
+input[type='text']:disabled {
+  background-color: var(--disabled-background-color, #f6f6f6);
+  color: var(--disabled-element-text-color, #868e96);
 }
 
 button[disabled]:focus,
 button[disabled]:hover,
-input[type="button"][disabled]:focus,
-input[type="button"][disabled]:hover,
-input[type="reset"][disabled]:focus,
-input[type="reset"][disabled]:hover,
-input[type="submit"][disabled]:focus,
-input[type="submit"][disabled]:hover {
+input[type='button'][disabled]:focus,
+input[type='button'][disabled]:hover,
+input[type='reset'][disabled]:focus,
+input[type='reset'][disabled]:hover,
+input[type='submit'][disabled]:focus,
+input[type='submit'][disabled]:hover {
   cursor: not-allowed;
-  color: var(--disabled-element-text-color,  #868e96)
+  color: var(--disabled-element-text-color, #868e96);
 }
 
 code {
-  background: var(--code-block-bg-color, #F6F6F6); 
+  background: var(--code-block-bg-color, #f6f6f6);
   border-radius: 0.4rem;
   font-size: 86%;
   margin: 0 0.2rem;
@@ -168,7 +168,7 @@ pre {
   background: #f4f5f6;
   border-left: 0.3rem solid var(--code-block-border-color, #0084b4);
   overflow-y: hidden;
-  padding-left: 0.5em;  
+  padding-left: 0.5em;
 }
 
 pre > code {
@@ -184,19 +184,19 @@ hr {
   margin: 3rem 0;
 }
 
-input[type="email"],
-input[type="number"],
-input[type="password"],
-input[type="search"],
-input[type="tel"],
-input[type="text"],
-input[type="url"],
+input[type='email'],
+input[type='number'],
+input[type='password'],
+input[type='search'],
+input[type='tel'],
+input[type='text'],
+input[type='url'],
 textarea,
 select:not([multiple]) {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  background-color: var(--select-background-color, #F6F6F6);
+  background-color: var(--select-background-color, #f6f6f6);
   border: none;
   box-shadow: none;
   box-sizing: border-box;
@@ -205,13 +205,13 @@ select:not([multiple]) {
   padding-right: 20px;
 }
 
-input[type="email"]:focus,
-input[type="number"]:focus,
-input[type="password"]:focus,
-input[type="search"]:focus,
-input[type="tel"]:focus,
-input[type="text"]:focus,
-input[type="url"]:focus,
+input[type='email']:focus,
+input[type='number']:focus,
+input[type='password']:focus,
+input[type='search']:focus,
+input[type='tel']:focus,
+input[type='text']:focus,
+input[type='url']:focus,
 textarea:focus,
 select:focus {
   outline: 0;
@@ -222,7 +222,7 @@ select:not([multiple]) {
     center right no-repeat;
   padding-right: 3rem;
   background-position: 94% 50%;
-  box-shadow: 1px 1px 2px 1px rgba(0,0,0,0.31);
+  box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.31);
   border-radius: 4px;
 }
 
@@ -246,15 +246,15 @@ fieldset {
   padding: 0;
 }
 
-input[type="checkbox"],
-input[type="radio"] {
+input[type='checkbox'],
+input[type='radio'] {
   display: inline;
 }
 
-input[type="checkbox"] {
+input[type='checkbox'] {
   width: 24px;
   height: 24px;
-  vertical-align: middle
+  vertical-align: middle;
 }
 
 /* only works in Chrome :( *
@@ -318,8 +318,8 @@ ul {
 }
 
 select:disabled {
-    box-shadow: none;
-    background: var(--disabled-background-color, #F6F6F6);
+  box-shadow: none;
+  background: var(--disabled-background-color, #f6f6f6);
 }
 
 table {
@@ -351,21 +351,20 @@ tr:last-of-type > td:last-of-type {
   border-bottom-right-radius: 5px;
 }
 
-
 td {
-  border-top: 0.1rem solid var(--table-border-color, #E1E1E1);
+  border-top: 0.1rem solid var(--table-border-color, #e1e1e1);
 }
 
 tbody > tr:last-of-type > td {
-  border-bottom: 0.1rem solid var(--table-border-color, #E1E1E1);
+  border-bottom: 0.1rem solid var(--table-border-color, #e1e1e1);
 }
 
 td:first-child {
-  border-left: 0.1rem solid var(--table-border-color, #E1E1E1);
+  border-left: 0.1rem solid var(--table-border-color, #e1e1e1);
 }
 
 td:last-child {
-  border-right: 0.1rem solid var(--table-border-color, #E1E1E1);
+  border-right: 0.1rem solid var(--table-border-color, #e1e1e1);
 }
 
 b,
