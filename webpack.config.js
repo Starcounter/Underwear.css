@@ -3,18 +3,18 @@ const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 const plugins = [
-  new ExtractTextPlugin('dist/underwear.css'),
-  new CopyWebpackPlugin([{ from: './fonts/LICENSE', to: 'dist/fonts' }])
+  new ExtractTextPlugin('dist/underwear.unminified.css'),  
 ];
 
 const pluginsWithMinification = [
-  ...plugins,
+  new ExtractTextPlugin('dist/underwear.css'),  
   new OptimizeCssAssetsPlugin({
     assetNameRegExp: /\.css$/g,
     cssProcessor: require('cssnano'),
     cssProcessorOptions: { discardComments: { removeAll: true } },
     canPrint: true
-  })
+  }),
+  new CopyWebpackPlugin([{ from: './fonts/LICENSE', to: 'dist/fonts' }])  
 ];
 
 const config = {
