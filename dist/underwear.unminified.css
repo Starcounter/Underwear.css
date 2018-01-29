@@ -482,7 +482,7 @@ template {
   --default-body-color: var(--dark);
   --blockquote-border-color: var(--livid);
   --shadow-color: var(--transparent-black);
-  --select-background-color: var(--light);
+  --editables-background-color: var(--light);
   --button-background-color: var(--while);
   --disabled-background-color: var(--light);
   --button-hover-background-color: var(--mouse);
@@ -641,7 +641,7 @@ textarea {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  background-color: var(--select-background-color);
+  background-color: var(--editables-background-color);
   border: none;
   box-shadow: none;
   box-sizing: border-box;
@@ -663,7 +663,7 @@ select:focus {
 }
 
 select:not([multiple]) {
-  background-color: var(--select-background-color);
+  background-color: var(--editables-background-color);
   background: url('data:image/svg+xml;utf8, <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="20" height="20" x="120px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve"><g><polygon points="79.3,42.1 76.4,39.3 51.3,65 25.5,39.9 22.7,42.7 51.3,70.7  "></polygon></g></svg>')
     center right no-repeat;
   padding: 5px 32px 5px 14px;
@@ -686,6 +686,7 @@ legend {
   margin-bottom: 0.5rem;
   display: inline-block;
 }
+
 label > span {
   display: block;
   font-size: 12px;
@@ -697,15 +698,12 @@ fieldset {
   padding: 0;
 }
 
-input[type='checkbox'],
-input[type='radio'] {
-  display: inline;
-}
-
 input[type='checkbox'] {
   width: 24px;
   height: 24px;
+  margin-right: 5px;
   vertical-align: middle;
+  background: #fff;
 }
 
 /* only works in Chrome :( *
