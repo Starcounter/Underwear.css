@@ -540,6 +540,7 @@ input[type='submit'] {
   color: var(--button-text-color);
   border-radius: 2px;
   padding-left: 16px;
+  padding-top: 2px;  
   padding-right: 16px;
   height: 32px;
   cursor: pointer;
