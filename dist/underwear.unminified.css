@@ -779,10 +779,7 @@ table {
 td,
 th {
   text-align: left;
-  padding-left: 8px;
-  padding-right: 8px;
-  padding-top: 10px;
-  padding-bottom: 7px;
+  padding: 11px 8px 6px 8px;
   font-weight: 400;
 }
 
