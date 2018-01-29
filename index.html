@@ -25,7 +25,7 @@
         body>div {
             margin-bottom: 150px
         }
-        
+
         span[sider] {
             display: inline-block;
             padding: 30px;
@@ -84,12 +84,12 @@
         <h1>Dropdown</h1>
         <table>
             <tr>
-                <td>
+                <th>
                     <p>Default</p>
-                </td>
-                <td>
+                </th>
+                <th>
                     <p>Disabled</p>
-                </td>
+                </th>
             </tr>
             <tr>
                 <td>
@@ -113,7 +113,7 @@
             <form>
                 <label>
                     <span>Title</span>
-                    <input type="text" value="Default">                    
+                    <input type="text" value="Default">
                 </label>
             </form>
         </div>
@@ -138,7 +138,7 @@
         </div>
     </div>
     <div>
-    <h1>&lt;pre&gt;</h1>
+        <h1>&lt;pre&gt;</h1>
         <div>
             <code>while(true) { stay(happy) }</code>
         </div>
@@ -147,7 +147,7 @@
     <div>
         <pre><code>while(true) { stay(happy) }</code></pre>
     </div>
-</div>
+    </div>
     <div style="width: 700px">
         <h1>Table</h1>
         <table>
@@ -180,26 +180,32 @@
     <div>
         <span sider>
             <h1>Checkbox</h1>
-            <div>
+            <div style="margin: 10px">
                 <form>
-                    <input id="checkbox" type="checkbox" value="Checkbox"> Checkbox
+                    <input id="checkbox" type="checkbox" value="Checkbox">
+                    <label for="checkbox">Checkbox</label> 
                 </form>
+            </div>
+            <div style="margin: 10px">
                 <form>
                     <input id="checkbox2" disabled type="checkbox" value="Checkbox">
                     <label for="checkbox2">Disabled unchecked</label>
                 </form>
+            </div>
+            <div style="margin: 10px">
                 <form>
                     <input id="checkbox3" disabled checked type="checkbox" value="Checkbox">
                     <label for="checkbox3">Disabled checked</label>
                 </form>
             </div>
-        </span sider>
-        <span>
-            <h1>Link</h1>
-            <div>
-                <a href="#">Link</a>
-            </div>
-        </span>
+    </div>
+    </span sider>
+    <span>
+        <h1>Link</h1>
+        <div>
+            <a href="#">Link</a>
+        </div>
+    </span>
     </div>
     <div>
         <div class="uniform-pagination">
