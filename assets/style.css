@@ -1,0 +1,83 @@
+html,
+body {
+    width: 100%;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 10px;
+    border-left: 5px dotted #eee;
+    border-right: 5px dotted #eee;
+}
+
+.container>div {
+    padding: 20px;
+    padding-bottom: 100px;
+    margin-bottom: 30px;
+    border-bottom: 10px dotted #eee;
+}
+
+span[sider] {
+    display: inline-block;
+    padding: 30px;
+    border: 1px solid #eee;
+    height: 400px;
+    width: 300px;
+    vertical-align: top;
+}
+
+.container div>h1:first-of-type {
+    border-bottom: 5px solid #d1ffd1;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    font-size: 3em;
+}
+
+.container div>h1:first-of-type::before {
+    content: "◽️ "
+}
+
+#surprise {
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+    display: inline-block;
+}
+
+#surprise[invisible] {
+    opacity: 0;
+}
+
+footer {
+    max-width: 1400px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 10px;
+}
+
+header {
+    border-bottom: 1px solid #a4ffbb;
+    box-shadow: 1px 1px 5px #c5c2c255;
+    z-index: 10;
+    position: relative;
+}
+
+header>div {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 10px;
+    display: flex;
+    align-items: center
+}
+header>div>div {
+    width: 50%
+}
+
+.emoji {
+    opacity: 0.7
+}
+
+.suffix {
+    color: #64c164;
+}
