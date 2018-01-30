@@ -6,6 +6,7 @@ const plugins = [
   new ExtractTextPlugin('dist/underwear.unminified.css'),  
 ];
 
+
 const pluginsWithMinification = [
   new ExtractTextPlugin('dist/underwear.css'),  
   new OptimizeCssAssetsPlugin({
