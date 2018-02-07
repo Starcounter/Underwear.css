@@ -1,5 +1,16 @@
 # Underwear.css - WIP
 
+## Install
+
+Install the component using [Bower](http://bower.io/):
+```sh
+$ bower install underwear.css
+```
+
+Or [download as ZIP](https://github.com/Starcounter/Underwear.css/archive/master.zip).
+
+<!-- [Starcounter 2.4.0.+](https://starcounter.io/) has it already pre-installed, under `/sys/underwear.css/underwear.css`. -->
+
 ## Development
 
 1. Clone this repository.
@@ -9,4 +20,4 @@
 
 ## Modifying CSS
 
-Please make sure to modify only files in `src` directory. 
+Please make sure to modify only files in `src` directory.

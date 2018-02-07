@@ -1,7 +1,7 @@
 {
   "name": "underwear",
-  "version": "1.0.0",
-  "description": "",
+  "version": "0.0.1",
+  "description": "Minimalistic CSS library to normalize UA styles",
   "main": "index.js",
   "devDependencies": {
     "copy-webpack-plugin": "^4.3.1",
@@ -21,7 +21,7 @@
   },
   "scripts": {
     "start": "webpack-dev-server --content-base . --hot --inline --open",
-    "build": "webpack -p"
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
