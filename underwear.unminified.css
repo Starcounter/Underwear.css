@@ -458,7 +458,7 @@ template {
  * Underwear.css
  * MIT (c) Starcounter
  */
-:root {
+ :root {
   /* Starcounter default color variables */
   --dark: #141d26;
   --inky: #1b2936;
@@ -494,6 +494,7 @@ template {
   --code-block-border-color: var(--blue);
   --anchor-color: var(--blue);
   --table-border-color: var(--light-gray);
+  --horizontal-line-color: var(--light-gray); 
 
   --font-family-sans-serif: 'Roboto', 'Segoe UI', 'Helvetica Neue', Arial,
     sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
@@ -518,6 +519,7 @@ body {
   font-size: var(--default-font-size);
   letter-spacing: 0.01em;
   line-height: 1.6;
+  margin: 8px;
 }
 
 blockquote {
@@ -626,7 +628,7 @@ pre > code {
 
 hr {
   border: 0;
-  border-top: 0.1rem solid #f4f5f6;
+  border-top: 0.2rem solid var(--horizontal-line-color);
   margin: 3rem 0;
 }
 
