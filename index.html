@@ -5,7 +5,36 @@
     <meta charset="utf-8">
     <title>Underwear.css</title>
     <link rel="stylesheet" href="underwear.css">
-    <link rel="stylesheet" href="assets/style.css">
+    <style>
+        html,
+        body {
+            width: 100%;
+            margin: 0px;
+        }
+
+        .container {
+            max-width: 90%;
+            margin: 0 auto;
+            padding: 10px;
+            border: 1px solid #eee;
+        }
+
+        footer {
+            padding: 20px
+        }
+
+        header>div {
+            max-width: 90%;
+            margin: 0 auto;
+            padding: 10px;
+            display: flex;
+            align-items: center
+        }
+
+        header>div>div {
+            width: 50%
+        }
+    </style>
 </head>
 
 <body>
@@ -78,10 +107,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <button onclick="surprise.removeAttribute('invisible')">Default</button>
-                        <div id="surprise" invisible>
-                            I like your curiosity
-                        </div>
+                        <button>Default</button>
                     </td>
                     <td>
                         <button disabled>Disabled</button>
@@ -210,7 +236,7 @@
                 <pre><code>while(true) { stay(happy) }</code></pre>
             </div>
         </div>
-        <div style="width: 700px">
+        <div>
             <h1>Table</h1>
             <table>
                 <caption>This is a table</caption>
@@ -241,21 +267,21 @@
             </table>
         </div>
         <div>
-            <span sider>
+            <span>
                 <h1>Checkbox</h1>
-                <div style="margin: 10px">
+                <div>
                     <form>
                         <input id="checkbox" type="checkbox" value="Checkbox">
                         <label for="checkbox">Checkbox</label>
                     </form>
                 </div>
-                <div style="margin: 10px">
+                <div>
                     <form>
                         <input id="checkbox2" disabled type="checkbox" value="Checkbox">
                         <label for="checkbox2">Disabled unchecked</label>
                     </form>
                 </div>
-                <div style="margin: 10px">
+                <div>
                     <form>
                         <input id="checkbox3" disabled checked type="checkbox" value="Checkbox">
                         <label for="checkbox3">Disabled checked</label>
@@ -264,13 +290,13 @@
         </div>
         <div>
             <h1>Input with type</h1>
-            <h2>Buttons</h2>
+            <h3>Buttons</h3>
             <p>
                 <code>&lt;input type="button"&gt;</code>,
                 <code>&lt;input type="submit"&gt;</code>, and
                 <code>&lt;input type="reset"&gt;</code>
             </p>
-            <div style="margin: 10px">
+            <div>
                 <form>
                     <input type="button" value="Button button">
                     <input type="submit" value="Submit button">
@@ -278,66 +304,73 @@
                 </form>
             </div>
             <hr>
-            <h2>Color</h2>
+            <h3>Color</h3>
             <p>
                 <code>&lt;input type="color"&gt;</code>
-                <div style="margin: 10px">
-                    <form>
-                        <input type="color" value="Color input">
-                    </form>
+            </p>
+            <div>
+                <form>
+                    <input type="color" value="Color input">
+                </form>
+            </div>
+            <hr>
+            <h3>Date</h3>
+            <p>
+                <code>&lt;input type="date"&gt;</code>
+            </p>
+            <div>
+                <form>
+                    <input type="date" value="Date input">
+                </form>
+            </div>
+            <h3>Email</h3>
+            <p>
+                <code>&lt;input type="email"&gt;</code>
+            </p>
+            <div>
+                <form>
+                    <input type="email" value="Email input">
+                </form>
+                <div>
+                    <em>Enter an invalid email and press enter</em>
                 </div>
-                <hr>
-                <h2>Date</h2>
-                <p>
-                    <code>&lt;input type="date"&gt;</code>
-                    <div style="margin: 10px">
-                        <form>
-                            <input type="date" value="Date input">
-                        </form>
-                    </div>
-                    <h2>Email</h2>
-                    <p>
-                        <code>&lt;input type="email"&gt;</code>
-                        <div style="margin: 10px">
-                            <form>
-                                <input type="email" value="Email input">
-                            </form>
-                            <div>
-                                <em>Enter an invalid email and press enter</em>
-                            </div>
-                        </div>
-                        <hr>
-                        <h2>File</h2>
-                        <p>
-                            <code>&lt;input type="file"&gt;</code>
-                            <div style="margin: 10px">
-                                <form>
-                                    <input type="file" value="File input">
-                                </form>
-                            </div>
-                            <hr>
-                            <h2>Image</h2>
-                            <p>
-                                <code>&lt;input type="image"&gt;</code>
-                                <div style="margin: 10px">
-                                    <form>
-                                        <input alt="Github Logo" type="image" src="assets/gh-logo.png">
-                                    </form>
-                                </div>
-                                <hr>
-                                <h2>Number</h2>
-                                <p>
-                                    <code>&lt;input type="number"&gt;</code>
-                                    <div style="margin: 10px">
-                                        <form>
-                                            <input type="number" value="10">
-                                        </form>
-                                    </div>
+            </div>
+            <hr>
+            <h3>File</h3>
+            <p>
+                <code>&lt;input type="file"&gt;</code>
+            </p>
+            <div>
+                <form>
+                    <input type="file" value="File input">
+                </form>
+            </div>
+            <hr>
+            <h2>Image</h2>
+            <p>
+                <code>&lt;input type="image"&gt;</code>
+            </p>
+            <div>
+                <form>
+                    <input alt="Github Logo" type="image" src="assets/gh-logo.png">
+                </form>
+            </div>
+            <hr>
+            <h3>Number</h3>
+            <p>
+                <code>&lt;input type="number"&gt;</code>
+            </p>
+            <div>
+                <form>
+                    <input type="number" value="10">
+                </form>
+            </div>
         </div>
         <div>
             <h1>Image example</h1>
             <p>Images are responsive by default</p>
             <img src="assets/sample-image.jpg">
+            <!-- the following HTML is copied and pasted from unsplash.com to credit the image author -->
             <p>Image by
                 <a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px;"
                     href="https://unsplash.com/@chrisabney?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge"
@@ -352,6 +385,7 @@
                     <span style="display:inline-block;padding:2px 3px;">Chris Abney</span>
                 </a>
             </p>
+            <!-- end of attribution -->
         </div>
         <div>
             <h1>
