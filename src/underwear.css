@@ -250,8 +250,6 @@ fieldset > legend {
 }
 
 input[type='checkbox'] {
-  width: 24px;
-  height: 24px;
   margin-right: 5px;
   vertical-align: middle;
   background: #fff;
