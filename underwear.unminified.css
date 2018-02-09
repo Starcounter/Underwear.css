@@ -700,6 +700,10 @@ fieldset {
   padding: 0;
 }
 
+fieldset > legend {
+  font-weight: bold
+}
+
 input[type='checkbox'] {
   width: 24px;
   height: 24px;
