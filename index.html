@@ -34,6 +34,17 @@
         header>div>div {
             width: 50%
         }
+
+        .color-sample  {
+            width: 25px;
+            height: 25px;
+            border-radius: 4px;
+            transition: transform 0.2s ease-in-out;
+            border: 1px solid #DDD;
+        }
+        .color-sample:hover  {
+            transform: scale(5,5);
+        }
     </style>
 </head>
 
@@ -467,6 +478,93 @@
                     <button class="primary">Submit</button>
                     <button>Cancel</button>
                 </div>
+            </div>
+        </div>
+        <div>
+            <h1>Custom variables</h1> 
+            <div>
+                <p>Underwear.css uses CSS Custom Properties (CSS Variables) that you can configure. You can also use them by yourself, to adhere to the consistent look and feel.</p>
+                <table>
+                    <tr><th>Name</th><th>Default value</th><th>Sample</th></tr>
+                    <tr>
+                        <td><code>--default-font-size</code></td>
+                        <td><code>14px</code></td>
+                        <td>Hello</td>                        
+                    </tr>       
+                    <tr>
+                        <td><code>--default-body-color</code></td>
+                        <td><code>#141D26</code></td>
+                        <td>Hello</td>                        
+                    </tr>
+                    <tr>
+                        <td><code>--blockquote-border-color</code></td>
+                        <td><code>#8696A5</code></td>
+                        <td><div class="color-sample" style="background-color: var(--blockquote-border-color)"><div></td>                        
+                    </tr>
+                    <tr>
+                        <td><code>--shadow-color</code></td>
+                        <td><code>#00000033</code></td>
+                        <td><div class="color-sample" style="background-color: var(--shadow-color)"><div></td>                        
+                    </tr>
+                    <tr>
+                        <td><code>--editables-background-color</code></td>
+                        <td><code>#F6F6F6</code></td>
+                        <td><div class="color-sample" style="background-color: var(--editables-background-color)"><div></td>                        
+                    </tr>
+                    <tr>
+                        <td><code>--button-background-color</code></td>
+                        <td><code>#FFFFFF</code></td>
+                        <td><div class="color-sample" style="background-color: var(--button-background-color)"><div></td>                        
+                    </tr>
+                    <tr>
+                        <td><code>--button-hover-background-color</code></td>
+                        <td><code>#E7ECF0</code></td>
+                        <td><div class="color-sample" style="background-color: var(--button-hover-background-color)"><div></td>                        
+                    </tr>
+
+                    <tr>
+                        <td><code>--button-text-color</code></td>
+                        <td><code>#141D26</code></td>
+                        <td><div class="color-sample" style="background-color: var(--button-text-color)"><div></td>                        
+                    </tr>
+
+                    <tr>
+                        <td><code>--disabled-element-text-color</code></td>
+                        <td><code>#E7ECF0</code></td>
+                        <td><div class="color-sample" style="background-color: var(--disabled-element-text-color)"><div></td>                        
+                    </tr>
+                    <tr>
+                        <td><code>--table-border-color</code></td>
+                        <td><code>#E7ECF0</code></td>
+                        <td><div class="color-sample" style="background-color: var(--table-border-color)"><div></td>                        
+                    </tr>
+                    <tr>
+                        <td><code>--code-block-bg-color</code></td>
+                        <td><code>#F6F6F6</code></td>
+                        <td><div class="color-sample" style="background-color: var(--code-block-bg-color)"><div></td>                        
+                    </tr>
+                    <tr>
+                        <td><code>--code-block-color</code></td>
+                        <td><code>#DF4534</code></td>
+                        <td><div class="color-sample" style="background-color: var(--code-block-color)"><div></td>                        
+                    </tr>
+                    <tr>
+                        <td><code>--code-block-border-color</code></td>
+                        <td><code>#0084B4</code></td>
+                        <td><div class="color-sample" style="background-color: var(--code-block-border-color)"><div></td>                        
+                    </tr>
+                    <tr>
+                        <td><code>--anchor-color</code></td>
+                        <td><code>#0084B4</code></td>
+                        <td><div class="color-sample" style="background-color: var(--anchor-color)"><div></td>                        
+                    </tr>
+                    <tr>
+                        <td><code>--horizontal-line-color</code></td>
+                        <td><code>#E7E7E7</code></td>
+                        <td><div class="color-sample" style="background-color: var(--horizontal-line-color)"><div></td>                        
+                    </tr>
+
+                </table>
             </div>
         </div>
     </div>
