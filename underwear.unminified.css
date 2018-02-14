@@ -460,30 +460,30 @@ template {
  */
  :root {
   /* Starcounter default color variables */
-  --dark: #141d26;
-  --inky: #1b2936;
-  --livid: #8696a5;
+  --dark: #141D26;
+  --inky: #1B2936;
+  --livid: #8696A5;
   --transparent-black: #00000033;
-  --mouse: #e7ecf0;
-  --blue-dark: #1a587f;
-  --blue: #0084b4;
-  --platinum: #e7e7e7;
-  --white: #ffffff;
-  --white-smoke: #f9f9f9;
-  --light: #f6f6f6;
-  --yellow: #ffdb25;
-  --red: #df4534;
-  --green: #3fa13f;
-  --darkgray: #868e96;
-  --light-gray: #e1e1e1;
-  --bluish-gray: #606c76;
+  --mouse: #E7ECF0;
+  --blue-dark: #1A587F;
+  --blue: #0084B4;
+  --platinum: #E7E7E7;
+  --white: #FFFFFF;
+  --white-smoke: #F9F9F9;
+  --light: #F6F6F6;
+  --yellow: #FFDB25;
+  --red: #DF4534;
+  --green: #3FA13F;
+  --darkgray: #868E96;
+  --light-gray: #E1E1E1;
+  --bluish-gray: #606C76;
 
   --default-font-size: 14px;
   --default-body-color: var(--dark);
   --blockquote-border-color: var(--livid);
   --shadow-color: var(--transparent-black);
   --editables-background-color: var(--light);
-  --button-background-color: var(--while);
+  --button-background-color: var(--white);
   --disabled-background-color: var(--light);
   --button-hover-background-color: var(--mouse);
   --button-text-color: var(--dark);
@@ -493,7 +493,6 @@ template {
   --code-block-color: var(--red);
   --code-block-border-color: var(--blue);
   --anchor-color: var(--blue);
-  --table-border-color: var(--light-gray);
   --horizontal-line-color: var(--platinum); 
 
   --font-family-sans-serif: 'Roboto', 'Segoe UI', 'Helvetica Neue', Arial,
