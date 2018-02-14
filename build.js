@@ -2,26 +2,38 @@ const express = require('express');
 const fs = require('fs');
 const puppeteer = require('puppeteer');
 
+/**
+ * host src directory
+ */
 var host = '127.0.0.1';
 var port = 5000;
-
 var app = express();
 app.use('/', express.static(__dirname + '/'));
 app.listen(port, host);
 
+/**
+ * Launch puppeteer and navigate to /src
+ */
 puppeteer.launch().then(async browser => {
   const page = await browser.newPage();
 
   await page.goto('http://127.0.0.1:5000/src');
 
+  // inject the script that parses the CSS and populates the table
   const scriptElement = await page.addScriptTag({ url: '/assets/utils.js' });
 
+  // remove the script again
   await page.evaluate(() => {
     for (const script of document.querySelectorAll('script')) script.remove();
   });
 
-  const html = await page.evaluate('document.documentElement.innerHTML');
+  // get the generated HTML
+  const html = await page.evaluate('document.documentElement.outerHTML');
+
+  //save it
   fs.writeFileSync('index.html', html);
   await browser.close();
+
+  // exit to kill express
   process.exit(0);
 });
