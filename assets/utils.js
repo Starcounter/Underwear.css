@@ -35,7 +35,8 @@ function getCSSProperties() {
 }
 
 function constructRow(data) {
-    return `<tr>
+    return `
+    <tr>
         <td><code>${data.name}</code></td>
         <td><code>${data.value}</code></td>
         <td>${data.isCSSColor? `<div class="color-sample" style="background-color: ${data.value}"><div>` : 'Hello World'}</td>
@@ -48,4 +49,4 @@ async function populateCSSPropertiesTable() {
     propsTable.innerHTML = rows.join('\n');
 }
 
-window.addEventListener('DOMContentLoaded', populateCSSPropertiesTable);
+populateCSSPropertiesTable();
