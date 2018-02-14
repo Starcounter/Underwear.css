@@ -7,8 +7,8 @@ function isCSSColor(value) {
     // set its color to the tested value
     div.style.backgroundColor = value;
     
-    // now check if it backgroundColor has changed. Because the browser verifies if the value is a valid CSS color before applying it.
-    // color property, if not applied, remains a default of rgba(0, 0, 0, 0)
+    // now check if its backgroundColor has changed. Because the browser verifies if the value is a valid CSS color before applying it to a color-type property.
+    // backgroundColor property, if not applied, remains a default of rgba(0, 0, 0, 0)
     const currentColor = window.getComputedStyle(div).backgroundColor;
     const isColor = currentColor !== 'rgba(0, 0, 0, 0)';
     
