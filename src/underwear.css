@@ -65,6 +65,15 @@ body {
   margin: 8px;
 }
 
+/* to override more-specific normalize.css font settings */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit
+}
+
 blockquote {
   border-left: 0.3rem solid var(--blockquote-border-color);
   margin-left: 0;
