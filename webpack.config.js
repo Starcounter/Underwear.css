@@ -1,11 +1,16 @@
+const WebpackShellPlugin = require('webpack-shell-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const FilewatcherPlugin = require("filewatcher-webpack-plugin");
 
 const plugins = [
   new ExtractTextPlugin('underwear.unminified.css'),
+  new WebpackShellPlugin({ onBuildExit: ['node build.js'] }),
+  new FilewatcherPlugin({
+    watchFileRegex: ['src/index.html']
+  })
 ];
-
 
 const pluginsWithMinification = [
   new ExtractTextPlugin('underwear.css'),
