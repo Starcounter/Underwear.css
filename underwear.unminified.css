@@ -576,14 +576,6 @@ input[type='button']:hover:not(:active),
 input[type='reset']:hover:not(:active),
 input[type='submit']:hover:not(:active) {
   background-color: var(--button-hover-background-color);
-  outline: 0;
-}
-
-button:focus,
-input[type='button']:focus,
-input[type='reset']:focus,
-input[type='submit']:focus {
-  outline: 0;
 }
 
 button[disabled],
@@ -661,18 +653,6 @@ textarea {
   height: 38px;
   padding-left: 16px;
   padding-right: 20px;
-}
-
-input[type='email']:focus,
-input[type='number']:focus,
-input[type='password']:focus,
-input[type='search']:focus,
-input[type='tel']:focus,
-input[type='text']:focus,
-input[type='url']:focus,
-textarea:focus,
-select:focus {
-  outline: 0;
 }
 
 select:not([multiple]) {
