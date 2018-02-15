@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Underwear.css</title>
+    <link rel="stylesheet" href="/underwear.css">
+    <style>
+        html,
+        body {
+            width: 100%;
+            margin: 0px;
+        }
+
+        .container {
+            max-width: 90%;
+            margin: 0 auto;
+            padding: 10px;
+            border: 1px solid #eee;
+        }
+
+        footer {
+            padding: 20px
+        }
+
+        header>div {
+            max-width: 90%;
+            margin: 0 auto;
+            padding: 10px;
+            display: flex;
+            align-items: center
+        }
+
+        header>div>div {
+            width: 50%
+        }
+
+        .color-sample  {
+            width: 25px;
+            height: 25px;
+            border-radius: 4px;
+            transition: transform 0.2s ease-in-out;
+            border: 1px solid #DDD;
+        }
+        .color-sample:hover  {
+            transform: scale(5,5);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div>
+            <div>
+                <h1>
+                    👙 Underwear.css
+                </h1>
+            </div>
+            <div style="text-align: right">
+                <a href="https://github.com/Starcounter/Underwear.css" rel="noopener" target="_blank">
+                    <img src="/assets/gh-logo.png">
+                </a>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div>
+            <h1>Headings</h1>
+            <h1>Heading
+                <code>h1</code>
+            </h1>
+            <h2>Heading
+                <code>h2</code>
+            </h2>
+            <h3>Heading
+                <code>h3</code>
+            </h3>
+            <h4>Heading
+                <code>h4</code>
+            </h4>
+            <h5>Heading
+                <code>h5</code>
+            </h5>
+            <h6>Heading
+                <code>h6</code>
+            </h6>
+        </div>
+        <div>
+            <h1>Horizontal line</h1>
+            <p>Here is a horizontal line (
+                <code>&lt;hr&gt;</code>) 👇</p>
+            <hr>
+        </div>
+        <div>
+            <h1>Text</h1>
+            <p>We're no strangers to love, You know the rules and so do I, A full commitment's what I'm thinking of, You wouldn't
+                get this from any other guy, I just wanna tell you how I'm feeling, Gotta make you understand, Never gonna
+                give you up, Never gonna let you down, Never gonna run around and desert you, Never gonna make you cry, Never
+                gonna say goodbye, Never gonna tell a lie and hurt you.</p>
+        </div>
+        <div>
+            <h1>Link</h1>
+            <p>Here is a sample
+                <a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">link.</a>
+            </p>
+        </div>
+        <div>
+            <h1>Button</h1>
+            <table>
+                <tr>
+                    <th>
+                        <p>Default</p>
+                    </th>
+                    <th>
+                        <p>Disabled</p>
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        <button>Default</button>
+                    </td>
+                    <td>
+                        <button disabled>Disabled</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <h1>Dropdown</h1>
+            <table>
+                <tr>
+                    <th>
+                        <p>Default</p>
+                    </th>
+                    <th>
+                        <p>Disabled</p>
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        <select>
+                            <option>Select me</option>
+                            <option>Or me</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select disabled>
+                            <option>Disabled</option>
+                            <option>Or me</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <h1>Entry field</h1>
+            <div>
+                <form>
+                    <label>
+                        <span>Title</span>
+                        <input type="text" value="Default">
+                    </label>
+                </form>
+            </div>
+            <div>
+                <form>
+                    <input type="text" value="Default">
+                    <input type="text" disabled value="Disabled">
+                    <input type="text" placeholder="Your placeholder">
+                </form>
+            </div>
+        </div>
+        <div>
+            <h1>Blockquote</h1>
+            <div>
+                <p>Remember this line from
+                    <strong>Jerry Maguire</strong>:</p>
+                <blockquote>
+                    We live in a cynical world. A cynical world. And we work in a business of tough competitors. I love you. You... complete
+                    me.
+                </blockquote>
+                <p>And she responded to him:</p>
+                <blockquote>
+                    Shut up... shut up, you had me at hello...
+                </blockquote>
+            </div>
+        </div>
+        <div>
+            <h1>Lists</h1>
+            <div>
+                <h4>One can always list a few things:</h4>
+                <ul>
+                    <li>First thing</li>
+                    <li>Second thing</li>
+                    <li>Last but not least thing</li>
+                </ul>
+            </div>
+            <div>
+                <h4>One can always list a few
+                    <strong>ordered</strong> things:</h4>
+                <ol>
+                    <li>First thing</li>
+                    <li>Second thing</li>
+                    <li>Last but not least thing</li>
+                </ol>
+            </div>
+            <div>
+                <h4>One can always list a few
+                    <strong>nested</strong> things:</h4>
+                <ol>
+                    <li>Parent
+                        <ul>
+                            That has some children
+                        </ul>
+                    </li>
+                    <li>Grand parent
+                        <ol>
+                            <li>Parent
+                                <ul>
+                                    <li>
+                                        That has some children
+                                    </li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div>
+            <h1>&lt;code&gt;</h1>
+            <div>
+                Here is some inlined code
+                <code>while(true) { stay(happy) }</code>, it's useful sometimes.
+            </div>
+        </div>
+        <div>
+            <h1>&lt;pre&gt;</h1>
+            <div>
+                <code>while(true) { stay(happy) }</code>
+            </div>
+        </div>
+        <div>
+            <h1>&lt;pre&gt;&lt;code&gt;</h1>
+            <div>
+                <pre><code>while(true) { stay(happy) }</code></pre>
+            </div>
+        </div>
+        <div>
+            <h1>Table</h1>
+            <table>
+                <caption>This is a table</caption>
+                <tr>
+                    <th>Entry Header 1</th>
+                    <th>Entry Header 2</th>
+                    <th>Entry Header 3</th>
+                    <th>Entry Header 4</th>
+                </tr>
+                <tr>
+                    <td>Entry First Line 1</td>
+                    <td>Entry First Line 2</td>
+                    <td>Entry First Line 3</td>
+                    <td>Entry First Line 4</td>
+                </tr>
+                <tr>
+                    <td>Entry Line 1</td>
+                    <td>Entry Line 2</td>
+                    <td>Entry Line 3</td>
+                    <td>Entry Line 4</td>
+                </tr>
+                <tr>
+                    <td>Entry Last Line 1</td>
+                    <td>Entry Last Line 2</td>
+                    <td>Entry Last Line 3</td>
+                    <td>Entry Last Line 4</td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <span>
+                <h1>Checkbox</h1>
+                <div>
+                    <form>
+                        <input id="checkbox" type="checkbox" value="Checkbox">
+                        <label for="checkbox">Checkbox</label>
+                    </form>
+                </div>
+                <div>
+                    <form>
+                        <input id="checkbox2" disabled type="checkbox" value="Checkbox">
+                        <label for="checkbox2">Disabled unchecked</label>
+                    </form>
+                </div>
+                <div>
+                    <form>
+                        <input id="checkbox3" disabled checked type="checkbox" value="Checkbox">
+                        <label for="checkbox3">Disabled checked</label>
+                    </form>
+                </div>
+        </div>
+        <div>
+            <h1>Input with type</h1>
+            <h3>Buttons</h3>
+            <p>
+                <code>&lt;input type="button"&gt;</code>,
+                <code>&lt;input type="submit"&gt;</code>, and
+                <code>&lt;input type="reset"&gt;</code>
+            </p>
+            <div>
+                <form>
+                    <input type="button" value="Button button">
+                    <input type="submit" value="Submit button">
+                    <input type="reset" value="Reset button">
+                </form>
+            </div>
+            <hr>
+            <h3>Color</h3>
+            <p>
+                <code>&lt;input type="color"&gt;</code>
+            </p>
+            <div>
+                <form>
+                    <input type="color" value="Color input">
+                </form>
+            </div>
+            <hr>
+            <h3>Date</h3>
+            <p>
+                <code>&lt;input type="date"&gt;</code>
+            </p>
+            <div>
+                <form>
+                    <input type="date" value="Date input">
+                </form>
+            </div>
+            <h3>Email</h3>
+            <p>
+                <code>&lt;input type="email"&gt;</code>
+            </p>
+            <div>
+                <form>
+                    <input type="email" value="Email input">
+                </form>
+                <div>
+                    <em>Enter an invalid email and press enter</em>
+                </div>
+            </div>
+            <hr>
+            <h3>File</h3>
+            <p>
+                <code>&lt;input type="file"&gt;</code>
+            </p>
+            <div>
+                <form>
+                    <input type="file" value="File input">
+                </form>
+            </div>
+            <hr>
+            <h2>Image</h2>
+            <p>
+                <code>&lt;input type="image"&gt;</code>
+            </p>
+            <div>
+                <form>
+                    <input alt="Github Logo" type="image" src="/assets/gh-logo.png">
+                </form>
+            </div>
+            <hr>
+            <h3>Number</h3>
+            <p>
+                <code>&lt;input type="number"&gt;</code>
+            </p>
+            <div>
+                <form>
+                    <input type="number" value="10">
+                </form>
+            </div>
+        </div>
+        <div>
+            <h1>Image example</h1>
+            <p>Images are responsive by default</p>
+            <img src="/assets/sample-image.jpg">
+            <!-- the following HTML is copied and pasted from unsplash.com to credit the image author -->
+            <p>Image by
+                <a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px;"
+                    href="https://unsplash.com/@chrisabney?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge"
+                    target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Chris Abney">
+                    <span style="display:inline-block;padding:2px 3px;">
+                        <svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-1px;fill:white;"
+                            viewBox="0 0 32 32">
+                            <title>unsplash-logo</title>
+                            <path d="M20.8 18.1c0 2.7-2.2 4.8-4.8 4.8s-4.8-2.1-4.8-4.8c0-2.7 2.2-4.8 4.8-4.8 2.7.1 4.8 2.2 4.8 4.8zm11.2-7.4v14.9c0 2.3-1.9 4.3-4.3 4.3h-23.4c-2.4 0-4.3-1.9-4.3-4.3v-15c0-2.3 1.9-4.3 4.3-4.3h3.7l.8-2.3c.4-1.1 1.7-2 2.9-2h8.6c1.2 0 2.5.9 2.9 2l.8 2.4h3.7c2.4 0 4.3 1.9 4.3 4.3zm-8.6 7.5c0-4.1-3.3-7.5-7.5-7.5-4.1 0-7.5 3.4-7.5 7.5s3.3 7.5 7.5 7.5c4.2-.1 7.5-3.4 7.5-7.5z"></path>
+                        </svg>
+                    </span>
+                    <span style="display:inline-block;padding:2px 3px;">Chris Abney</span>
+                </a>
+            </p>
+            <!-- end of attribution -->
+        </div>
+        <div>
+            <h1>
+                Composition Example
+            </h1>
+            <div class="uniform-form">
+                <fieldset>
+                    <legend>Personal information:</legend>
+                    <div style="width: 500px">
+                        <label style="width: 100%">
+                            <span>Email</span>
+                            <input style="width: 100%" type="text" value="stephen@fry.com">
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <span>Firstname</span>
+                            <input type="text" value="Stephen">
+                        </label>
+
+                        <label>
+                            <span>Lastname</span>
+                            <input type="text" value="Fry">
+                        </label>
+                    </div>
+                </fieldset>
+                <div>
+                    <label>
+                        <span>Password</span>
+                        <input type="password" value="+46 707 11 33 44">
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        <span>Mobile phone number</span>
+                        <input type="text" value="+46 707 11 33 44">
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        <span>Home number</span>
+                        <input type="text" value="+46 707 11 33 44">
+                    </label>
+                    <p>
+                        <a href="#">ADD PHONE NUMBER</a>
+                    </p>
+                </div>
+                <div>
+                    <label>
+                        <span>Home address</span>
+                        <input type="text" value="Bybrokajen 5, 111 48 Stockholm">
+                    </label>
+                    <p>
+                        <a href="#">ADD ADDRESS</a>
+                    </p>
+                </div>
+                <div>
+                    <fieldset>
+                        <legend>Delivery Type</legend>
+                        <div>
+                            <label>
+                                <input type="radio" name="d-type" value="urgent"> Urgent 1-2 days
+                            </label>
+                        </div>
+                        <div>
+                            <label>
+                                <input type="radio" name="d-type" value="normal"> Normal 5-7 days
+                            </label>
+                        </div>
+                    </fieldset>
+                </div>
+                <div>
+                    <label>
+                        <input type="checkbox"> I agree to
+                        <a href="#">Terms and Conditions</a>.
+                    </label>
+                </div>
+                <div>
+                    <button class="primary">Submit</button>
+                    <button>Cancel</button>
+                </div>
+            </div>
+        </div>
+        <div>
+            <h1>CSS Custom Properties</h1> 
+            <div>
+                <p>underwear.css uses CSS Custom Properties (CSS Variables) that you can configure. You can also use them by yourself, to adhere to the consistent look and feel.</p>
+                <table>
+                    <tr><th>Name</th><th>Default value</th><th>Sample</th></tr>
+                    <tbody id="propsTable">
+                        <!-- this is automatically populated at build step -->
+                    </tbody>                    
+                </table>
+            </div>
+        </div>
+    </div>
+    <footer>MIT License, Starcounter © 2018</footer>
+</body>
+
+</html>
+
+<body>
