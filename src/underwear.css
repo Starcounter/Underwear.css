@@ -4,42 +4,47 @@
  */
 :root {
   /* Starcounter default color variables */
+
+  --white: #ffffff;
+
+  --gray-0: #f9f9f9;
+  --gray-1: #f9f9f9;
+  --gray-2: #f6f6f6;
+  --gray-3: #efefef;
+  --gray-4: #e7e7e7;
+  --gray-5: #e1e1e1;
+  --gray-6: #868e96;
+  --gray-7: #606c76;
+
+  --transparent-black: #00000033;
+
+  --blue: #0084b4;
+  --dark-blue: #1a587f;
   --dark: #141d26;
+  --green: #3fa13f;
   --inky: #1b2936;
   --livid: #8696a5;
-  --transparent-black: #00000033;
   --mouse: #e7ecf0;
-  --blue-dark: #1a587f;
-  --blue: #0084b4;
-  --platinum: #e7e7e7;
-  --white: #ffffff;
-  --off-white: #EFEFEF;
-  --white-smoke: #f9f9f9;
-  --light: #f6f6f6;
-  --yellow: #ffdb25;
   --red: #df4534;
-  --green: #3fa13f;
-  --darkgray: #868e96;
-  --light-gray: #e1e1e1;
-  --bluish-gray: #606c76;
+  --yellow: #ffdb25;
 
-  --default-font-size: 14px;
-  --default-body-color: var(--dark);
-  --blockquote-border-color: var(--livid);
-  --shadow-color: var(--transparent-black);
-  --editables-background-color: var(--light);
-  --button-background-color: var(--white);
-  --button-active-background-color: var(--off-white);
-  --disabled-background-color: var(--light);
-  --button-hover-background-color: var(--white-smoke);
-  --button-text-color: var(--dark);
-  --disabled-element-text-color: var(--darkgray);
-  --table-border-color: var(--light-gray);
-  --code-block-bg-color: var(--light);
-  --code-block-color: var(--red);
-  --code-block-border-color: var(--blue);
   --anchor-color: var(--blue);
-  --horizontal-line-color: var(--platinum);
+  --blockquote-border-color: var(--livid);
+  --button-active-background-color: var(--gray-3);
+  --button-background-color: var(--white);
+  --button-hover-background-color: var(--gray-1);
+  --button-text-color: var(--dark);
+  --code-block-background-color: var(--gray-2);
+  --code-block-border-color: var(--blue);
+  --code-block-color: var(--red);
+  --default-body-color: var(--dark);
+  --default-font-size: 14px;
+  --disabled-background-color: var(--gray-2);
+  --disabled-text-color: var(--gray-6);
+  --editable-background-color: var(--gray-2);
+  --horizontal-line-color: var(--gray-4);
+  --shadow-color: var(--transparent-black);
+  --table-border-color: var(--gray-5);
 
   --font-family-sans-serif: 'Roboto', 'Segoe UI', 'Helvetica Neue', Arial,
     sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
@@ -73,7 +78,7 @@ input,
 optgroup,
 select,
 textarea {
-  font-family: inherit
+  font-family: inherit;
 }
 
 blockquote {
@@ -129,12 +134,12 @@ input[type='submit'][disabled] {
   cursor: default;
   box-shadow: none;
   background-color: var(--disabled-background-color);
-  color: var(--disabled-element-text-color);
+  color: var(--disabled-text-color);
 }
 
 input[type='text']:disabled {
   background-color: var(--disabled-background-color);
-  color: var(--disabled-element-text-color);
+  color: var(--disabled-text-color);
 }
 
 button[disabled]:focus,
@@ -146,11 +151,11 @@ input[type='reset'][disabled]:hover,
 input[type='submit'][disabled]:focus,
 input[type='submit'][disabled]:hover {
   cursor: not-allowed;
-  color: var(--disabled-element-text-color);
+  color: var(--disabled-text-color);
 }
 
 code {
-  background: var(--code-block-bg-color);
+  background: var(--code-block-background-color);
   border-radius: 2px;
   font-size: 86%;
   margin: 0 0.2rem;
@@ -190,7 +195,7 @@ textarea {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  background-color: var(--editables-background-color);
+  background-color: var(--editable-background-color);
   border: none;
   box-shadow: none;
   box-sizing: border-box;
@@ -200,7 +205,7 @@ textarea {
 }
 
 select:not([multiple]) {
-  background-color: var(--editables-background-color);
+  background-color: var(--editable-background-color);
   background: url('data:image/svg+xml;utf8, <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="20" height="20" x="120px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve"><g><polygon points="79.3,42.1 76.4,39.3 51.3,65 25.5,39.9 22.7,42.7 51.3,70.7  "></polygon></g></svg>')
     center right no-repeat;
   padding: 5px 32px 5px 14px;
@@ -263,7 +268,7 @@ input[type="checkbox"]:checked::before {
   background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M0 11.522l1.578-1.626 7.734 4.619 13.335-12.526 1.353 1.354-14 18.646z"/></svg>');
 }
 input[type="checkbox"]:disabled:before {
-  background-color: var(--platinum)
+  background-color: var(--gray-4)
 }
 */
 
