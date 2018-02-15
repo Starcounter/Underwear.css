@@ -285,9 +285,7 @@ a:hover {
 dl,
 ol,
 ul {
-  list-style: none;
   margin-top: 0;
-  padding-left: 0;
 }
 
 dl dl,
@@ -303,13 +301,6 @@ ul ul {
   margin: 1.5rem 0 1.5rem 3rem;
 }
 
-ol {
-  list-style: decimal inside;
-}
-
-ul {
-  list-style: circle inside;
-}
 
 select:disabled {
   box-shadow: none;
