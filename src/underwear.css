@@ -13,6 +13,7 @@
   --blue: #0084b4;
   --platinum: #e7e7e7;
   --white: #ffffff;
+  --off-white: #EFEFEF;
   --white-smoke: #f9f9f9;
   --light: #f6f6f6;
   --yellow: #ffdb25;
@@ -28,6 +29,7 @@
   --shadow-color: var(--transparent-black);
   --editables-background-color: var(--light);
   --button-background-color: var(--white);
+  --button-active-background-color: var(--off-white);
   --disabled-background-color: var(--light);
   --button-hover-background-color: var(--mouse);
   --button-text-color: var(--dark);
@@ -110,6 +112,7 @@ input[type='button']:active,
 input[type='reset']:active,
 input[type='submit']:active {
   box-shadow: none;
+  background-color: var(--button-active-background-color);
 }
 
 button:hover,
