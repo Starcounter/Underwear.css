@@ -28,10 +28,10 @@ puppeteer.launch().then(async browser => {
   });
 
   // get the generated HTML
-  const html = await page.evaluate('document.documentElement.outerHTML');
+  const html = await page.evaluate('document.documentElement.outerHTML'); 
 
   //save it
-  fs.writeFileSync('index.html', html);
+  fs.writeFileSync('index.html', html.replace(/\.\.\/assets\//g, 'assets/'));
   await browser.close();
 
   // exit to kill express
