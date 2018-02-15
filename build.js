@@ -9,7 +9,7 @@ var host = '127.0.0.1';
 var port = 5000;
 var app = express();
 app.use('/', express.static(__dirname + '/'));
-app.listen(port, host);
+const server = app.listen(port, host);
 
 /**
  * Launch puppeteer and navigate to /src
@@ -34,6 +34,6 @@ puppeteer.launch().then(async browser => {
   fs.writeFileSync('index.html', html.replace(/\.\.\/assets\//g, 'assets/'));
   await browser.close();
 
-  // exit to kill express
-  process.exit(0);
+  // kill express
+  server.close();
 });
