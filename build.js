@@ -7,6 +7,7 @@ const puppeteer = require('puppeteer');
  */
 var host = '127.0.0.1';
 var port = 5000;
+
 var app = express();
 app.use('/', express.static(__dirname + '/'));
 const server = app.listen(port, host);
@@ -35,5 +36,5 @@ puppeteer.launch().then(async browser => {
   await browser.close();
 
   // kill express
-  server.close();
+  server.close(() => process.exit(0));
 });

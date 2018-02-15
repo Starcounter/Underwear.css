@@ -462,44 +462,45 @@ template {
   /* Starcounter default color variables */
 
   --white: #ffffff;
+
   --gray-0: #f9f9f9;
   --gray-1: #f9f9f9;
   --gray-2: #f6f6f6;
-  --gray-3: #EFEFEF;
+  --gray-3: #efefef;
   --gray-4: #e7e7e7;
   --gray-5: #e1e1e1;
   --gray-6: #868e96;
   --gray-7: #606c76;
- 
+
   --transparent-black: #00000033;
 
+  --blue: #0084b4;
+  --dark-blue: #1a587f;
   --dark: #141d26;
+  --green: #3fa13f;
   --inky: #1b2936;
   --livid: #8696a5;
   --mouse: #e7ecf0;
-  --dark-blue: #1a587f;
-  --blue: #0084b4;
-  --yellow: #ffdb25;
   --red: #df4534;
-  --green: #3fa13f;
+  --yellow: #ffdb25;
 
-  --default-font-size: 14px;
-  --default-body-color: var(--dark);
+  --anchor-color: var(--blue);
   --blockquote-border-color: var(--livid);
-  --shadow-color: var(--transparent-black);
-  --editable-background-color: var(--gray-2);
-  --button-background-color: var(--white);
   --button-active-background-color: var(--gray-3);
-  --disabled-background-color: var(--gray-2);
+  --button-background-color: var(--white);
   --button-hover-background-color: var(--gray-1);
   --button-text-color: var(--dark);
-  --disabled-text-color: var(--gray-6);
-  --table-border-color: var(--gray-5);
   --code-block-background-color: var(--gray-2);
-  --code-block-color: var(--red);
   --code-block-border-color: var(--blue);
-  --anchor-color: var(--blue);
+  --code-block-color: var(--red);
+  --default-body-color: var(--dark);
+  --default-font-size: 14px;
+  --disabled-background-color: var(--gray-2);
+  --disabled-text-color: var(--gray-6);
+  --editable-background-color: var(--gray-2);
   --horizontal-line-color: var(--gray-4);
+  --shadow-color: var(--transparent-black);
+  --table-border-color: var(--gray-5);
 
   --font-family-sans-serif: 'Roboto', 'Segoe UI', 'Helvetica Neue', Arial,
     sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
@@ -533,7 +534,7 @@ input,
 optgroup,
 select,
 textarea {
-  font-family: inherit
+  font-family: inherit;
 }
 
 blockquote {
