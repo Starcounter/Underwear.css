@@ -1,7 +1,7 @@
 <html lang="en"><head>
     <meta charset="utf-8">
     <title>Underwear.css</title>
-    <link rel="stylesheet" href="/underwear.css">
+    <link rel="stylesheet" href="underwear.unminified.css">
     <style>
         html,
         body {
@@ -32,15 +32,16 @@
             width: 50%
         }
 
-        .color-sample  {
+        .color-sample {
             width: 25px;
             height: 25px;
             border-radius: 4px;
             transition: transform 0.2s ease-in-out;
             border: 1px solid #DDD;
         }
-        .color-sample:hover  {
-            transform: scale(5,5);
+
+        .color-sample:hover {
+            transform: scale(5, 5);
         }
     </style>
 </head>
@@ -55,7 +56,7 @@
             </div>
             <div style="text-align: right">
                 <a href="https://github.com/Starcounter/Underwear.css" rel="noopener" target="_blank">
-                    <img src="/assets/gh-logo.png">
+                    <img src="assets/gh-logo.png">
                 </a>
             </div>
         </div>
@@ -359,7 +360,7 @@
             </p>
             <div>
                 <form>
-                    <input alt="Github Logo" type="image" src="/assets/gh-logo.png">
+                    <input alt="Github Logo" type="image" src="assets/gh-logo.png">
                 </form>
             </div>
             <hr>
@@ -376,7 +377,7 @@
         <div>
             <h1>Image example</h1>
             <p>Images are responsive by default</p>
-            <img src="/assets/sample-image.jpg">
+            <img src="assets/sample-image.jpg">
             <!-- the following HTML is copied and pasted from unsplash.com to credit the image author -->
             <p>Image by
                 <a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px;" href="https://unsplash.com/@chrisabney?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Chris Abney">
@@ -390,100 +391,95 @@
                 </a>
             </p>
             <!-- end of attribution -->
-        </div>
+        </div>        
         <div>
-            <h1>
-                Composition Example
-            </h1>
-            <div class="uniform-form">
-                <fieldset>
-                    <legend>Personal information:</legend>
-                    <div style="width: 500px">
-                        <label style="width: 100%">
-                            <span>Email</span>
-                            <input style="width: 100%" type="text" value="stephen@fry.com">
-                        </label>
-                    </div>
-                    <div>
-                        <label>
-                            <span>Firstname</span>
-                            <input type="text" value="Stephen">
-                        </label>
-
-                        <label>
-                            <span>Lastname</span>
-                            <input type="text" value="Fry">
-                        </label>
-                    </div>
-                </fieldset>
-                <div>
-                    <label>
-                        <span>Password</span>
-                        <input type="password" value="+46 707 11 33 44">
-                    </label>
-                </div>
-                <div>
-                    <label>
-                        <span>Mobile phone number</span>
-                        <input type="text" value="+46 707 11 33 44">
-                    </label>
-                </div>
-                <div>
-                    <label>
-                        <span>Home number</span>
-                        <input type="text" value="+46 707 11 33 44">
-                    </label>
-                    <p>
-                        <a href="#">ADD PHONE NUMBER</a>
-                    </p>
-                </div>
-                <div>
-                    <label>
-                        <span>Home address</span>
-                        <input type="text" value="Bybrokajen 5, 111 48 Stockholm">
-                    </label>
-                    <p>
-                        <a href="#">ADD ADDRESS</a>
-                    </p>
-                </div>
-                <div>
-                    <fieldset>
-                        <legend>Delivery Type</legend>
-                        <div>
-                            <label>
-                                <input type="radio" name="d-type" value="urgent"> Urgent 1-2 days
-                            </label>
-                        </div>
-                        <div>
-                            <label>
-                                <input type="radio" name="d-type" value="normal"> Normal 5-7 days
-                            </label>
-                        </div>
-                    </fieldset>
-                </div>
-                <div>
-                    <label>
-                        <input type="checkbox"> I agree to
-                        <a href="#">Terms and Conditions</a>.
-                    </label>
-                </div>
-                <div>
-                    <button class="primary">Submit</button>
-                    <button>Cancel</button>
-                </div>
-            </div>
-        </div>
-        <div>
-            <h1>CSS Custom Properties</h1> 
+            <h1>CSS Custom Properties</h1>
             <div>
-                <p>underwear.css uses CSS Custom Properties (CSS Variables) that you can configure. You can also use them by yourself, to adhere to the consistent look and feel.</p>
+                <p>underwear.css uses CSS Custom Properties (CSS Variables) that you can configure. You can also use them by
+                    yourself, to adhere to the consistent look and feel.</p>
                 <table>
-                    <tbody><tr><th>Name</th><th>Default value</th><th>Sample</th></tr>
+                    <tbody><tr>
+                        <th>Name</th>
+                        <th>Default value</th>
+                        <th>Sample</th>
+                    </tr>
                     </tbody><tbody id="propsTable">
+    <tr>
+        <td><code>--white</code></td>
+        <td><code>#fff</code></td>
+        <td><div class="color-sample" style="background-color: #fff"><div></div></div></td>
+    </tr>
+
+    <tr>
+        <td><code>--gray-1</code></td>
+        <td><code>#f9f9f9</code></td>
+        <td><div class="color-sample" style="background-color: #f9f9f9"><div></div></div></td>
+    </tr>
+
+    <tr>
+        <td><code>--gray-2</code></td>
+        <td><code>#f6f6f6</code></td>
+        <td><div class="color-sample" style="background-color: #f6f6f6"><div></div></div></td>
+    </tr>
+
+    <tr>
+        <td><code>--gray-3</code></td>
+        <td><code>#efefef</code></td>
+        <td><div class="color-sample" style="background-color: #efefef"><div></div></div></td>
+    </tr>
+
+    <tr>
+        <td><code>--gray-4</code></td>
+        <td><code>#e7e7e7</code></td>
+        <td><div class="color-sample" style="background-color: #e7e7e7"><div></div></div></td>
+    </tr>
+
+    <tr>
+        <td><code>--gray-5</code></td>
+        <td><code>#e1e1e1</code></td>
+        <td><div class="color-sample" style="background-color: #e1e1e1"><div></div></div></td>
+    </tr>
+
+    <tr>
+        <td><code>--gray-6</code></td>
+        <td><code>#868e96</code></td>
+        <td><div class="color-sample" style="background-color: #868e96"><div></div></div></td>
+    </tr>
+
+    <tr>
+        <td><code>--gray-7</code></td>
+        <td><code>#606c76</code></td>
+        <td><div class="color-sample" style="background-color: #606c76"><div></div></div></td>
+    </tr>
+
+    <tr>
+        <td><code>--transparent-black</code></td>
+        <td><code>#00000033</code></td>
+        <td><div class="color-sample" style="background-color: #00000033"><div></div></div></td>
+    </tr>
+
+    <tr>
+        <td><code>--blue</code></td>
+        <td><code>#0084b4</code></td>
+        <td><div class="color-sample" style="background-color: #0084b4"><div></div></div></td>
+    </tr>
+
+    <tr>
+        <td><code>--dark-blue</code></td>
+        <td><code>#1a587f</code></td>
+        <td><div class="color-sample" style="background-color: #1a587f"><div></div></div></td>
+    </tr>
+
     <tr>
         <td><code>--dark</code></td>
         <td><code>#141d26</code></td>
         <td><div class="color-sample" style="background-color: #141d26"><div></div></div></td>
+    </tr>
+
+    <tr>
+        <td><code>--green</code></td>
+        <td><code>#3fa13f</code></td>
+        <td><div class="color-sample" style="background-color: #3fa13f"><div></div></div></td>
     </tr>
 
     <tr>
@@ -499,57 +495,9 @@
     </tr>
 
     <tr>
-        <td><code>--transparent-black</code></td>
-        <td><code>#00000033</code></td>
-        <td><div class="color-sample" style="background-color: #00000033"><div></div></div></td>
-    </tr>
-
-    <tr>
         <td><code>--mouse</code></td>
         <td><code>#e7ecf0</code></td>
         <td><div class="color-sample" style="background-color: #e7ecf0"><div></div></div></td>
-    </tr>
-
-    <tr>
-        <td><code>--blue-dark</code></td>
-        <td><code>#1a587f</code></td>
-        <td><div class="color-sample" style="background-color: #1a587f"><div></div></div></td>
-    </tr>
-
-    <tr>
-        <td><code>--blue</code></td>
-        <td><code>#0084b4</code></td>
-        <td><div class="color-sample" style="background-color: #0084b4"><div></div></div></td>
-    </tr>
-
-    <tr>
-        <td><code>--platinum</code></td>
-        <td><code>#e7e7e7</code></td>
-        <td><div class="color-sample" style="background-color: #e7e7e7"><div></div></div></td>
-    </tr>
-
-    <tr>
-        <td><code>--white</code></td>
-        <td><code>#fff</code></td>
-        <td><div class="color-sample" style="background-color: #fff"><div></div></div></td>
-    </tr>
-
-    <tr>
-        <td><code>--white-smoke</code></td>
-        <td><code>#f9f9f9</code></td>
-        <td><div class="color-sample" style="background-color: #f9f9f9"><div></div></div></td>
-    </tr>
-
-    <tr>
-        <td><code>--light</code></td>
-        <td><code>#f6f6f6</code></td>
-        <td><div class="color-sample" style="background-color: #f6f6f6"><div></div></div></td>
-    </tr>
-
-    <tr>
-        <td><code>--yellow</code></td>
-        <td><code>#ffdb25</code></td>
-        <td><div class="color-sample" style="background-color: #ffdb25"><div></div></div></td>
     </tr>
 
     <tr>
@@ -559,111 +507,9 @@
     </tr>
 
     <tr>
-        <td><code>--green</code></td>
-        <td><code>#3fa13f</code></td>
-        <td><div class="color-sample" style="background-color: #3fa13f"><div></div></div></td>
-    </tr>
-
-    <tr>
-        <td><code>--darkgray</code></td>
-        <td><code>#868e96</code></td>
-        <td><div class="color-sample" style="background-color: #868e96"><div></div></div></td>
-    </tr>
-
-    <tr>
-        <td><code>--light-gray</code></td>
-        <td><code>#e1e1e1</code></td>
-        <td><div class="color-sample" style="background-color: #e1e1e1"><div></div></div></td>
-    </tr>
-
-    <tr>
-        <td><code>--bluish-gray</code></td>
-        <td><code>#606c76</code></td>
-        <td><div class="color-sample" style="background-color: #606c76"><div></div></div></td>
-    </tr>
-
-    <tr>
-        <td><code>--default-font-size</code></td>
-        <td><code>14px</code></td>
-        <td>Hello World</td>
-    </tr>
-
-    <tr>
-        <td><code>--default-body-color</code></td>
-        <td><code>var(--dark)</code></td>
-        <td><div class="color-sample" style="background-color: var(--dark)"><div></div></div></td>
-    </tr>
-
-    <tr>
-        <td><code>--blockquote-border-color</code></td>
-        <td><code>var(--livid)</code></td>
-        <td><div class="color-sample" style="background-color: var(--livid)"><div></div></div></td>
-    </tr>
-
-    <tr>
-        <td><code>--shadow-color</code></td>
-        <td><code>var(--transparent-black)</code></td>
-        <td><div class="color-sample" style="background-color: var(--transparent-black)"><div></div></div></td>
-    </tr>
-
-    <tr>
-        <td><code>--editables-background-color</code></td>
-        <td><code>var(--light)</code></td>
-        <td><div class="color-sample" style="background-color: var(--light)"><div></div></div></td>
-    </tr>
-
-    <tr>
-        <td><code>--button-background-color</code></td>
-        <td><code>var(--white)</code></td>
-        <td><div class="color-sample" style="background-color: var(--white)"><div></div></div></td>
-    </tr>
-
-    <tr>
-        <td><code>--disabled-background-color</code></td>
-        <td><code>var(--light)</code></td>
-        <td><div class="color-sample" style="background-color: var(--light)"><div></div></div></td>
-    </tr>
-
-    <tr>
-        <td><code>--button-hover-background-color</code></td>
-        <td><code>var(--mouse)</code></td>
-        <td><div class="color-sample" style="background-color: var(--mouse)"><div></div></div></td>
-    </tr>
-
-    <tr>
-        <td><code>--button-text-color</code></td>
-        <td><code>var(--dark)</code></td>
-        <td><div class="color-sample" style="background-color: var(--dark)"><div></div></div></td>
-    </tr>
-
-    <tr>
-        <td><code>--disabled-element-text-color</code></td>
-        <td><code>var(--darkgray)</code></td>
-        <td><div class="color-sample" style="background-color: var(--darkgray)"><div></div></div></td>
-    </tr>
-
-    <tr>
-        <td><code>--table-border-color</code></td>
-        <td><code>var(--light-gray)</code></td>
-        <td><div class="color-sample" style="background-color: var(--light-gray)"><div></div></div></td>
-    </tr>
-
-    <tr>
-        <td><code>--code-block-bg-color</code></td>
-        <td><code>var(--light)</code></td>
-        <td><div class="color-sample" style="background-color: var(--light)"><div></div></div></td>
-    </tr>
-
-    <tr>
-        <td><code>--code-block-color</code></td>
-        <td><code>var(--red)</code></td>
-        <td><div class="color-sample" style="background-color: var(--red)"><div></div></div></td>
-    </tr>
-
-    <tr>
-        <td><code>--code-block-border-color</code></td>
-        <td><code>var(--blue)</code></td>
-        <td><div class="color-sample" style="background-color: var(--blue)"><div></div></div></td>
+        <td><code>--yellow</code></td>
+        <td><code>#ffdb25</code></td>
+        <td><div class="color-sample" style="background-color: #ffdb25"><div></div></div></td>
     </tr>
 
     <tr>
@@ -673,9 +519,99 @@
     </tr>
 
     <tr>
+        <td><code>--blockquote-border-color</code></td>
+        <td><code>var(--livid)</code></td>
+        <td><div class="color-sample" style="background-color: var(--livid)"><div></div></div></td>
+    </tr>
+
+    <tr>
+        <td><code>--button-active-background-color</code></td>
+        <td><code>var(--gray-3)</code></td>
+        <td><div class="color-sample" style="background-color: var(--gray-3)"><div></div></div></td>
+    </tr>
+
+    <tr>
+        <td><code>--button-background-color</code></td>
+        <td><code>var(--white)</code></td>
+        <td><div class="color-sample" style="background-color: var(--white)"><div></div></div></td>
+    </tr>
+
+    <tr>
+        <td><code>--button-hover-background-color</code></td>
+        <td><code>var(--gray-1)</code></td>
+        <td><div class="color-sample" style="background-color: var(--gray-1)"><div></div></div></td>
+    </tr>
+
+    <tr>
+        <td><code>--button-text-color</code></td>
+        <td><code>var(--dark)</code></td>
+        <td><div class="color-sample" style="background-color: var(--dark)"><div></div></div></td>
+    </tr>
+
+    <tr>
+        <td><code>--code-block-background-color</code></td>
+        <td><code>var(--gray-2)</code></td>
+        <td><div class="color-sample" style="background-color: var(--gray-2)"><div></div></div></td>
+    </tr>
+
+    <tr>
+        <td><code>--code-block-border-color</code></td>
+        <td><code>var(--blue)</code></td>
+        <td><div class="color-sample" style="background-color: var(--blue)"><div></div></div></td>
+    </tr>
+
+    <tr>
+        <td><code>--code-block-color</code></td>
+        <td><code>var(--red)</code></td>
+        <td><div class="color-sample" style="background-color: var(--red)"><div></div></div></td>
+    </tr>
+
+    <tr>
+        <td><code>--default-body-color</code></td>
+        <td><code>var(--dark)</code></td>
+        <td><div class="color-sample" style="background-color: var(--dark)"><div></div></div></td>
+    </tr>
+
+    <tr>
+        <td><code>--default-font-size</code></td>
+        <td><code>14px</code></td>
+        <td>Hello World</td>
+    </tr>
+
+    <tr>
+        <td><code>--disabled-background-color</code></td>
+        <td><code>var(--gray-2)</code></td>
+        <td><div class="color-sample" style="background-color: var(--gray-2)"><div></div></div></td>
+    </tr>
+
+    <tr>
+        <td><code>--disabled-text-color</code></td>
+        <td><code>var(--gray-6)</code></td>
+        <td><div class="color-sample" style="background-color: var(--gray-6)"><div></div></div></td>
+    </tr>
+
+    <tr>
+        <td><code>--editable-background-color</code></td>
+        <td><code>var(--gray-2)</code></td>
+        <td><div class="color-sample" style="background-color: var(--gray-2)"><div></div></div></td>
+    </tr>
+
+    <tr>
         <td><code>--horizontal-line-color</code></td>
-        <td><code>var(--platinum)</code></td>
-        <td><div class="color-sample" style="background-color: var(--platinum)"><div></div></div></td>
+        <td><code>var(--gray-4)</code></td>
+        <td><div class="color-sample" style="background-color: var(--gray-4)"><div></div></div></td>
+    </tr>
+
+    <tr>
+        <td><code>--shadow-color</code></td>
+        <td><code>var(--transparent-black)</code></td>
+        <td><div class="color-sample" style="background-color: var(--transparent-black)"><div></div></div></td>
+    </tr>
+
+    <tr>
+        <td><code>--table-border-color</code></td>
+        <td><code>var(--gray-5)</code></td>
+        <td><div class="color-sample" style="background-color: var(--gray-5)"><div></div></div></td>
     </tr>
 
     <tr>
@@ -688,7 +624,7 @@
         <td><code>--font-family-monospace</code></td>
         <td><code>SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace</code></td>
         <td>Hello World</td>
-    </tr></tbody>                    
+    </tr></tbody>
                 </table>
             </div>
         </div>

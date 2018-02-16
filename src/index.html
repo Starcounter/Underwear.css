@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>Underwear.css</title>
-    <link rel="stylesheet" href="/underwear.css">
+    <link rel="stylesheet" href="../underwear.unminified.css">
     <style>
         html,
         body {
@@ -35,15 +35,16 @@
             width: 50%
         }
 
-        .color-sample  {
+        .color-sample {
             width: 25px;
             height: 25px;
             border-radius: 4px;
             transition: transform 0.2s ease-in-out;
             border: 1px solid #DDD;
         }
-        .color-sample:hover  {
-            transform: scale(5,5);
+
+        .color-sample:hover {
+            transform: scale(5, 5);
         }
     </style>
 </head>
@@ -58,7 +59,7 @@
             </div>
             <div style="text-align: right">
                 <a href="https://github.com/Starcounter/Underwear.css" rel="noopener" target="_blank">
-                    <img src="/assets/gh-logo.png">
+                    <img src="../assets/gh-logo.png">
                 </a>
             </div>
         </div>
@@ -362,7 +363,7 @@
             </p>
             <div>
                 <form>
-                    <input alt="Github Logo" type="image" src="/assets/gh-logo.png">
+                    <input alt="Github Logo" type="image" src="../assets/gh-logo.png">
                 </form>
             </div>
             <hr>
@@ -379,7 +380,7 @@
         <div>
             <h1>Image example</h1>
             <p>Images are responsive by default</p>
-            <img src="/assets/sample-image.jpg">
+            <img src="../assets/sample-image.jpg">
             <!-- the following HTML is copied and pasted from unsplash.com to credit the image author -->
             <p>Image by
                 <a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px;"
@@ -396,98 +397,21 @@
                 </a>
             </p>
             <!-- end of attribution -->
-        </div>
+        </div>        
         <div>
-            <h1>
-                Composition Example
-            </h1>
-            <div class="uniform-form">
-                <fieldset>
-                    <legend>Personal information:</legend>
-                    <div style="width: 500px">
-                        <label style="width: 100%">
-                            <span>Email</span>
-                            <input style="width: 100%" type="text" value="stephen@fry.com">
-                        </label>
-                    </div>
-                    <div>
-                        <label>
-                            <span>Firstname</span>
-                            <input type="text" value="Stephen">
-                        </label>
-
-                        <label>
-                            <span>Lastname</span>
-                            <input type="text" value="Fry">
-                        </label>
-                    </div>
-                </fieldset>
-                <div>
-                    <label>
-                        <span>Password</span>
-                        <input type="password" value="+46 707 11 33 44">
-                    </label>
-                </div>
-                <div>
-                    <label>
-                        <span>Mobile phone number</span>
-                        <input type="text" value="+46 707 11 33 44">
-                    </label>
-                </div>
-                <div>
-                    <label>
-                        <span>Home number</span>
-                        <input type="text" value="+46 707 11 33 44">
-                    </label>
-                    <p>
-                        <a href="#">ADD PHONE NUMBER</a>
-                    </p>
-                </div>
-                <div>
-                    <label>
-                        <span>Home address</span>
-                        <input type="text" value="Bybrokajen 5, 111 48 Stockholm">
-                    </label>
-                    <p>
-                        <a href="#">ADD ADDRESS</a>
-                    </p>
-                </div>
-                <div>
-                    <fieldset>
-                        <legend>Delivery Type</legend>
-                        <div>
-                            <label>
-                                <input type="radio" name="d-type" value="urgent"> Urgent 1-2 days
-                            </label>
-                        </div>
-                        <div>
-                            <label>
-                                <input type="radio" name="d-type" value="normal"> Normal 5-7 days
-                            </label>
-                        </div>
-                    </fieldset>
-                </div>
-                <div>
-                    <label>
-                        <input type="checkbox"> I agree to
-                        <a href="#">Terms and Conditions</a>.
-                    </label>
-                </div>
-                <div>
-                    <button class="primary">Submit</button>
-                    <button>Cancel</button>
-                </div>
-            </div>
-        </div>
-        <div>
-            <h1>CSS Custom Properties</h1> 
+            <h1>CSS Custom Properties</h1>
             <div>
-                <p>underwear.css uses CSS Custom Properties (CSS Variables) that you can configure. You can also use them by yourself, to adhere to the consistent look and feel.</p>
+                <p>underwear.css uses CSS Custom Properties (CSS Variables) that you can configure. You can also use them by
+                    yourself, to adhere to the consistent look and feel.</p>
                 <table>
-                    <tr><th>Name</th><th>Default value</th><th>Sample</th></tr>
+                    <tr>
+                        <th>Name</th>
+                        <th>Default value</th>
+                        <th>Sample</th>
+                    </tr>
                     <tbody id="propsTable">
                         <!-- this is automatically populated at build step -->
-                    </tbody>                    
+                    </tbody>
                 </table>
             </div>
         </div>
