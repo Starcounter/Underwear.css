@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en"><head>
     <meta charset="utf-8">
     <title>Underwear.css</title>
@@ -56,7 +57,7 @@
             </div>
             <div style="text-align: right">
                 <a href="https://github.com/Starcounter/Underwear.css" rel="noopener" target="_blank">
-                    <img src="assets/gh-logo.png">
+                    <img alt="GitHub Logo" title="View on GitHub" src="assets/gh-logo.png">
                 </a>
             </div>
         </div>
@@ -208,7 +209,7 @@
                 <ol>
                     <li>Parent
                         <ul>
-                            That has some children
+                            <li>That has some children</li>
                         </ul>
                     </li>
                     <li>Grand parent
@@ -275,27 +276,26 @@
             </tbody></table>
         </div>
         <div>
-            <span>
-                <h1>Checkbox</h1>
-                <div>
-                    <form>
-                        <input id="checkbox" type="checkbox" value="Checkbox">
-                        <label for="checkbox">Checkbox</label>
-                    </form>
-                </div>
-                <div>
-                    <form>
-                        <input id="checkbox2" disabled="" type="checkbox" value="Checkbox">
-                        <label for="checkbox2">Disabled unchecked</label>
-                    </form>
-                </div>
-                <div>
-                    <form>
-                        <input id="checkbox3" disabled="" checked="" type="checkbox" value="Checkbox">
-                        <label for="checkbox3">Disabled checked</label>
-                    </form>
-                </div>
-        </span></div>
+            <h1>Checkbox</h1>
+            <div>
+                <form>
+                    <input id="checkbox" type="checkbox" value="Checkbox">
+                    <label for="checkbox">Checkbox</label>
+                </form>
+            </div>
+            <div>
+                <form>
+                    <input id="checkbox2" disabled="" type="checkbox" value="Checkbox">
+                    <label for="checkbox2">Disabled unchecked</label>
+                </form>
+            </div>
+            <div>
+                <form>
+                    <input id="checkbox3" disabled="" checked="" type="checkbox" value="Checkbox">
+                    <label for="checkbox3">Disabled checked</label>
+                </form>
+            </div>
+        </div>
         <div>
             <h1>Input with type</h1>
             <h3>Buttons</h3>
@@ -318,7 +318,7 @@
             </p>
             <div>
                 <form>
-                    <input type="color" value="Color input">
+                    <input type="color" value="#CCCCFF">
                 </form>
             </div>
             <hr>
@@ -328,7 +328,7 @@
             </p>
             <div>
                 <form>
-                    <input type="date" value="Date input">
+                    <input type="date" value="2018-02-09">
                 </form>
             </div>
             <h3>Email</h3>
@@ -350,7 +350,7 @@
             </p>
             <div>
                 <form>
-                    <input type="file" value="File input">
+                    <input type="file">
                 </form>
             </div>
             <hr>
@@ -377,7 +377,7 @@
         <div>
             <h1>Image example</h1>
             <p>Images are responsive by default</p>
-            <img src="assets/sample-image.jpg">
+            <img src="assets/sample-image.jpg" alt="Sample photo">
             <!-- the following HTML is copied and pasted from unsplash.com to credit the image author -->
             <p>Image by
                 <a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px;" href="https://unsplash.com/@chrisabney?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Chris Abney">
@@ -391,7 +391,7 @@
                 </a>
             </p>
             <!-- end of attribution -->
-        </div>        
+        </div>
         <div>
             <h1>CSS Custom Properties</h1>
             <div>
@@ -630,8 +630,5 @@
         </div>
     </div>
     <footer>MIT License, Starcounter © 2018</footer>
-
-
-
 
 </body></html>

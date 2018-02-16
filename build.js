@@ -32,6 +32,7 @@ puppeteer.launch().then(async browser => {
   let html = await page.evaluate('document.documentElement.outerHTML'); 
 
   // fix the paths
+  html = '<!DOCTYPE html>\n' + html;
   html = html.replace(/\.\.\/assets\//g, 'assets/');
   html = html.replace(/\.\.\/underwear/g, 'underwear');
 
