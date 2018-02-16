@@ -29,10 +29,14 @@ puppeteer.launch().then(async browser => {
   });
 
   // get the generated HTML
-  const html = await page.evaluate('document.documentElement.outerHTML'); 
+  let html = await page.evaluate('document.documentElement.outerHTML'); 
+
+  // fix the paths
+  html = html.replace(/\.\.\/assets\//g, 'assets/');
+  html = html.replace(/\.\.\/underwear/g, 'underwear');
 
   //save it
-  fs.writeFileSync('index.html', html.replace(/\.\.\/assets\//g, 'assets/'));
+  fs.writeFileSync('index.html', html);
   await browser.close();
 
   // kill express
