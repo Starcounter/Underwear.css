@@ -509,7 +509,7 @@ template {
 
 /* 
   PLEASE DO NOT MAINTAIN THE FOLLOWING PROPERTIES (in :host)
-  Instead, maintain the selector above, then copy and paste the result as is to here.
+  Instead, maintain the selector above (:root), then copy and paste the result as is to (:host).
 */
 :host {
   /* Starcounter default color variables */
@@ -698,7 +698,6 @@ input[type='number'],
 input[type='password'],
 input[type='search'],
 input[type='tel'],
-input:not([type]),
 input[type='text'],
 input:not([type]),
 input[type='url'],
