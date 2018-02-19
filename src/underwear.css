@@ -136,6 +136,7 @@ input[type='submit'][disabled] {
   color: var(--disabled-text-color);
 }
 
+input:not([type]):disabled,
 input[type='text']:disabled {
   background-color: var(--disabled-background-color);
   color: var(--disabled-text-color);
@@ -188,7 +189,9 @@ input[type='number'],
 input[type='password'],
 input[type='search'],
 input[type='tel'],
+input:not([type]),
 input[type='text'],
+input:not([type]),
 input[type='url'],
 textarea {
   -webkit-appearance: none;
@@ -285,19 +288,6 @@ dl,
 ol,
 ul {
   margin-top: 0;
-}
-
-dl dl,
-dl ol,
-dl ul,
-ol dl,
-ol ol,
-ol ul,
-ul dl,
-ul ol,
-ul ul {
-  font-size: 90%;
-  margin: 1.5rem 0 1.5rem 3rem;
 }
 
 
