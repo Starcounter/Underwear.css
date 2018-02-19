@@ -277,18 +277,6 @@ textarea {
   min-height: 6.5rem;
 }
 
-label,
-legend {
-  margin-bottom: 0.5rem;
-  display: inline-block;
-}
-
-label > span {
-  display: block;
-  font-size: 12px;
-  margin-bottom: 4px;
-}
-
 fieldset {
   border-width: 0;
   padding: 0;
