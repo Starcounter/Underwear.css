@@ -13,7 +13,7 @@ const pluginsWithMinification = [
   new OptimizeCssAssetsPlugin({
     assetNameRegExp: /\.css$/g,
     cssProcessor: require('cssnano'),
-    cssProcessorOptions: { discardComments: { removeAll: true } },
+    cssProcessorOptions: { discardComments: { removeAll: true }, mergeRules: false },
     canPrint: true
   })
 ];
