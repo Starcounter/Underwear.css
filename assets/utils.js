@@ -47,6 +47,8 @@ async function populateCSSPropertiesTable() {
     const properties = await getCSSProperties();
     const rows = properties.map(constructRow);
     propsTable.innerHTML = rows.join('\n');
+
+    populationDone();
 }
 
 populateCSSPropertiesTable();
