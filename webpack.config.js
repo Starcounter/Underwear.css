@@ -26,6 +26,10 @@ const config = {
   module: {
     loaders: [
       {
+        test: /\.txt$/,
+        use: 'raw-loader'
+      },
+      {
         test: /\.(ttf|eot|woff|woff2)$/,
         loader: 'file-loader',
         options: {
