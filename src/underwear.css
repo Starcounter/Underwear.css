@@ -368,6 +368,7 @@ tr:last-of-type > td:last-of-type {
 
 td {
   border-top: 0.1rem solid var(--table-border-color);
+  background-color: var(--white);
 }
 
 tbody > tr:last-of-type > td {
