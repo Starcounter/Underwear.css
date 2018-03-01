@@ -375,11 +375,11 @@ tbody > tr:last-of-type > td {
   border-bottom: 0.1rem solid var(--table-border-color);
 }
 
-td:first-child {
+td:first-of-type {
   border-left: 0.1rem solid var(--table-border-color);
 }
 
-td:last-child {
+td:last-of-type {
   border-right: 0.1rem solid var(--table-border-color);
 }
 
