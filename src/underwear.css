@@ -295,7 +295,8 @@ fieldset > legend {
   font-weight: bold;
 }
 
-input[type='checkbox'] {
+input[type='checkbox'],
+input[type='radio'] {
   margin-right: 5px;
   vertical-align: middle;
   background: #fff;
