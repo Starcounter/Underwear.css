@@ -1,3 +1,7 @@
+### ⚠️☠️ This repo is archived. The code content of this repo is merged into ➡️ [Uniform.css](https://github.com/Starcounter/uniform.css)
+
+-------------
+
 # Underwear.css - WIP
 
 ## Install
